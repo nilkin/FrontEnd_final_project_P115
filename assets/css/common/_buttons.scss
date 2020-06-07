@@ -30,16 +30,21 @@
     }
 }
 
-.btn-secondary {
-    display: inline-block;
-    border: 1px solid $color-white;
-    padding: 10px 40px;
-    border-radius: 30px;
-    color: #437eeb;
-    font-weight: 700;
+.btn-second {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
     position: relative;
     z-index: 1;
-    overflow: hidden;
+    color: $color-gray;
+    background-color: $color-white;
+    &:hover {
+        background-color: $color-white;
+        
+    }
+
+   
 }
 
 .btn-overlay {
@@ -55,7 +60,7 @@
     overflow: hidden;
     &:hover {
         color: $color-white;
-        &::after{
+        &::after {
             left: 0;
         }
     }
@@ -67,7 +72,7 @@
         border-color: transparent;
         position: absolute;
         left: -100%;
-        top: 0;      
+        top: 0;
         height: 100%;
         width: 100%;
         z-index: -1;
