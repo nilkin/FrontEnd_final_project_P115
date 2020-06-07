@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 .my-btn-primary {
   background-color: #437eeb;
-  padding: 18px 48px;
+  padding: 18px 44px;
   display: inline-block;
   font-family: "Nunito", sans-serif;
   font-size: 14px;
@@ -18,7 +18,7 @@
 }
 
 .fa-plus {
-  border: 1px dotted white;
+  border: 1px dotted #ffffff;
   padding: 6px;
   border-radius: 50%;
   background-color: #437eeb;
@@ -37,7 +37,52 @@
 }
 
 .btn-secondary {
-  background-color: white;
+  display: inline-block;
+  border: 1px solid #ffffff;
+  padding: 10px 40px;
+  border-radius: 30px;
+  color: #437eeb;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn-overlay {
+  display: inline-block;
+  border: 1px solid #ffffff;
+  padding: 10px 40px;
+  border-radius: 50px;
+  color: #437eeb;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn-overlay:hover {
+  color: #ffffff;
+}
+
+.btn-overlay:hover::after {
+  left: 0;
+}
+
+.btn-overlay::after {
+  content: "";
+  background: -webkit-gradient(linear, left top, right top, from(#437eeb), to(#1e55bd));
+  background: linear-gradient(90deg, #437eeb 0%, #1e55bd 100%);
+  color: #ffffff;
+  border-color: transparent;
+  position: absolute;
+  left: -100%;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 body {
@@ -192,15 +237,30 @@ h6 {
   right: 1rem;
 }
 
+#head-nav.sticky-menu {
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: #ffffff;
+  top: 0;
+}
+
 #tech-system .container .content-items {
   position: relative;
   top: 8rem;
 }
 
-#tech-system .container .content-items .image-size img {
-  width: 120%;
+#tech-system .container .content-items .banner {
   position: relative;
-  left: 3rem;
+  top: 1rem;
+}
+
+#tech-system .container .content-items .image-size img {
+  width: 115%;
+  position: relative;
+  left: 1rem;
+  bottom: 4rem;
 }
 
 #tech-system .container .content-items h2 {
@@ -239,31 +299,33 @@ h6 {
 }
 
 #features .container img {
-  width: 95%;
+  width: 90%;
   position: relative;
-  left: 7rem;
+  left: 10rem;
 }
 
-#features .features-items {
+#features .container .features-items {
   position: relative;
   left: 6rem;
 }
 
-#features .features-items .items-box {
+#features .container .features-items .item {
   position: relative;
   width: 70%;
   border-bottom: 3px solid #437eeb;
   border-radius: 10px;
-  padding-bottom: 5rem;
-  right: 0rem;
+  padding: 50px;
 }
 
-#features .features-items .items-box .item {
-  width: 80%;
-  margin-left: 2rem;
+#features .container .features-items .item .items-box {
+  width: 110%;
+  margin-left: 1rem;
+  padding: 0;
+  position: relative;
+  right: 2rem;
 }
 
-#features .features-items .items-box .item .icon i {
+#features .container .features-items .item .items-box .icon i {
   font-size: 5rem;
   display: inline-block;
   background: -webkit-gradient(linear, left top, right top, from(#031941), to(#437eeb));
@@ -273,21 +335,39 @@ h6 {
   -webkit-text-fill-color: transparent;
 }
 
-#features .features-items .items-box .item .icon i::before {
+#features .container .features-items .item .items-box .icon i::before {
   font-size: 4.37rem;
 }
 
-#features .features-items .items-box .item h3 {
+#features .container .features-items .item .items-box h3 {
   font-weight: 700;
   margin-bottom: 25px;
 }
 
-#features .features-items .items-box .item p {
+#features .container .features-items .item .items-box p {
   color: #666666;
   line-height: 28px;
   margin: 0 0 15px;
   text-transform: none;
   font-weight: 400;
   font-size: 15px;
+}
+
+#features .container .features-items .owl-dots .owl-dot.active span {
+  background: #1e55bd;
+}
+
+#features .container .features-items .owl-dots span {
+  background: #ffffff;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+#features .wave {
+  background: #ffffff;
+  position: relative;
+  bottom: 7rem;
+  z-index: -2;
 }
 /*# sourceMappingURL=styles.css.map */

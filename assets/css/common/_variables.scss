@@ -2,19 +2,23 @@
 
 $color-main: rgb(67, 126, 235);
 $color-secondary: rgba(30, 85, 189, 1);
+$color-third:rgba(67,126,235,1);
+$color-fourth:rgba(3,25,65,1);
 $color-white: #ffffff;
 
-$color-black: #232323;;
+
+$color-black: #232323;
 $color-gray: #666666;
 
 // Gradient
 
 $main-gradient: linear-gradient(90deg, $color-secondary 0%, $color-main 100%);
 $hover-gradient: linear-gradient(90deg, $color-main 0%, $color-secondary 100%);
+$icon-gradient: linear-gradient(90deg, $color-fourth 0%, $color-third 100%);
 
 // font families
 
-$font-first: 'Nunito', sans-serif;
+$font-first: "Nunito", sans-serif;
 
 // font sizes
 $title-sizes: (
@@ -29,10 +33,18 @@ $title-sizes: (
 // @mixin
 
 @mixin transition($property) {
-    -webkit-transition: $property;
-    -moz-transition: $property;
-    -ms-transition: $property;
-    -o-transition: $property;
-    transition: $property;
+  -webkit-transition: $property;
+  -moz-transition: $property;
+  -ms-transition: $property;
+  -o-transition: $property;
+  transition: $property;
+}
+
+@mixin box-shadow($property) {
+  box-shadow: $property;
+  -moz-box-shadow: $property;
+  -webkit-box-shadow: $property;
+  -o-box-shadow: $property;
+  -ms-box-shadow: $property;
 }
 

@@ -1,13 +1,19 @@
 #tech-system {
     .container {
         .content-items {
+            .banner {
+                position: relative;
+                top: 1rem;
+            }
+
             position: relative;
             top: 8rem;
             .image-size {
                 img {
-                    width: 120%;
+                    width: 115%;
                     position: relative;
-                    left: 3rem;
+                    left: 1rem;
+                    bottom: 4rem;
                 }
             }
             h2 {

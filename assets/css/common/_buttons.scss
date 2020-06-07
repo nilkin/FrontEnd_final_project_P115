@@ -1,6 +1,6 @@
 .my-btn-primary {
     background-color: $color-main;
-    padding: 18px 48px;
+    padding: 18px 44px;
     display: inline-block;
     font-family: "Nunito", sans-serif;
     font-size: 14px;
@@ -13,11 +13,10 @@
     border-radius: inherit;
     color: $color-white;
     border-radius: 30px;
-
 }
 
 .fa-plus {
-    border: 1px dotted white;
+    border: 1px dotted $color-white;
     padding: 6px;
     border-radius: 50%;
     background-color: $color-main;
@@ -32,5 +31,46 @@
 }
 
 .btn-secondary {
-    background-color: white;
+    display: inline-block;
+    border: 1px solid $color-white;
+    padding: 10px 40px;
+    border-radius: 30px;
+    color: #437eeb;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-overlay {
+    display: inline-block;
+    border: 1px solid $color-white;
+    padding: 10px 40px;
+    border-radius: 50px;
+    color: $color-third;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    &:hover {
+        color: $color-white;
+        &::after{
+            left: 0;
+        }
+    }
+
+    &::after {
+        content: "";
+        background: $hover-gradient;
+        color: $color-white;
+        border-color: transparent;
+        position: absolute;
+        left: -100%;
+        top: 0;      
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        @include transition(all 0.25s ease-in-out);
+    }
 }
