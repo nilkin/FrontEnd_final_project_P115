@@ -1,0 +1,38 @@
+// colors
+
+$color-main: rgb(67, 126, 235);
+$color-secondary: rgba(30, 85, 189, 1);
+$color-white: #ffffff;
+
+$color-black: #232323;;
+$color-gray: #666666;
+
+// Gradient
+
+$main-gradient: linear-gradient(90deg, $color-secondary 0%, $color-main 100%);
+$hover-gradient: linear-gradient(90deg, $color-main 0%, $color-secondary 100%);
+
+// font families
+
+$font-first: 'Nunito', sans-serif;
+
+// font sizes
+$title-sizes: (
+  "h1": 40,
+  "h2": 36,
+  "h3": 28,
+  "h4": 24,
+  "h5": 20,
+  "h6": 18,
+);
+
+// @mixin
+
+@mixin transition($property) {
+    -webkit-transition: $property;
+    -moz-transition: $property;
+    -ms-transition: $property;
+    -o-transition: $property;
+    transition: $property;
+}
+

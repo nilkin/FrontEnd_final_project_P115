@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+.my-btn-primary {
+  background-color: #437eeb;
+  padding: 18px 48px;
+  display: inline-block;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 25px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  letter-spacing: 1px;
+  overflow: hidden;
+  border-radius: inherit;
+  color: #ffffff;
+  border-radius: 30px;
+}
+
+.fa-plus {
+  border: 1px dotted white;
+  padding: 6px;
+  border-radius: 50%;
+  background-color: #437eeb;
+}
+
+.btn-grad {
+  background-image: -webkit-gradient(linear, left top, right top, from(#1e55bd), to(#437eeb));
+  background-image: linear-gradient(90deg, #1e55bd 0%, #437eeb 100%);
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  background-image: -webkit-gradient(linear, left top, right top, from(#437eeb), to(#1e55bd));
+  background-image: linear-gradient(90deg, #437eeb 0%, #1e55bd 100%);
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: white;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: #232323;
+  font-style: normal;
+}
+
+.ul, li {
+  list-style: none !important;
+}
+
+.img {
+  max-width: 100%;
+}
+
+a,
+button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+a:focus, a:hover,
+.btn:focus, .btn:hover,
+button:focus, button:hover {
+  text-decoration: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+  color: #232323;
+  margin-top: 0px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: normal;
+}
+
+#head-nav nav {
+  position: relative;
+  right: 15px;
+  background-color: #437eeb;
+  width: 22.9rem;
+  height: 5.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#head-nav .anada-brand {
+  position: absolute;
+  left: 11.8rem;
+  bottom: 1.1rem;
+}
+
+#head-nav .navbar-menu {
+  position: relative;
+  top: 1rem;
+  right: 1rem;
+}
+
+#head-nav .navbar-menu .nav-item:hover .menu-dropdown {
+  opacity: 1;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  z-index: 2;
+  font-size: 13px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  visibility: visible;
+  color: #232323;
+  line-height: 3;
+  padding: 4px 6px;
+}
+
+#head-nav .navbar-menu .nav-item .nav-link {
+  color: #232323;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  padding-bottom: 2rem;
+}
+
+#head-nav .navbar-menu .nav-item .nav-link.active {
+  color: #437eeb;
+}
+
+#head-nav .navbar-menu .nav-item .nav-link:hover {
+  color: #437eeb;
+}
+
+#head-nav .navbar-menu .nav-item .menu-dropdown {
+  margin-left: 0.6rem;
+  position: absolute;
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
+  opacity: 0;
+  font-size: 13px;
+  padding: 4px 6px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  visibility: hidden;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  line-height: 3;
+  display: block;
+}
+
+#head-nav .navbar-menu .nav-item .menu-dropdown li a {
+  color: black;
+  font-size: 14px;
+}
+
+#head-nav .navbar-menu .nav-item .menu-dropdown li a:hover {
+  color: #437eeb;
+}
+
+#head-nav .navbar-menu .attr-nav .side-menu {
+  position: absolute;
+  right: 11rem;
+}
+
+#head-nav .navbar-menu .attr-nav a i {
+  font-size: 1rem;
+  color: black;
+  position: relative;
+  top: 0.5rem;
+  right: 1rem;
+}
+
+#tech-system .container .content-items {
+  position: relative;
+  top: 8rem;
+}
+
+#tech-system .container .content-items .image-size img {
+  width: 120%;
+  position: relative;
+  left: 3rem;
+}
+
+#tech-system .container .content-items h2 {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+#tech-system .container .content-items h2 span {
+  font-size: 36px;
+  display: block;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+#tech-system .container .content-items p {
+  color: #666666;
+  line-height: 28px;
+  margin: 0 0 15px;
+  text-transform: none;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+}
+
+#tech-system .container .content-items a {
+  margin-top: 12px;
+}
+
+#features .container {
+  overflow-x: hidden;
+  max-width: inherit;
+  position: relative;
+  top: 14rem;
+}
+
+#features .container img {
+  width: 95%;
+  position: relative;
+  left: 7rem;
+}
+
+#features .features-items {
+  position: relative;
+  left: 6rem;
+}
+
+#features .features-items .items-box {
+  position: relative;
+  width: 70%;
+  border-bottom: 3px solid #437eeb;
+  border-radius: 10px;
+  padding-bottom: 5rem;
+  right: 0rem;
+}
+
+#features .features-items .items-box .item {
+  width: 80%;
+  margin-left: 2rem;
+}
+
+#features .features-items .items-box .item .icon i {
+  font-size: 5rem;
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, right top, from(#031941), to(#437eeb));
+  background: linear-gradient(90deg, #031941 0%, #437eeb 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#features .features-items .items-box .item .icon i::before {
+  font-size: 4.37rem;
+}
+
+#features .features-items .items-box .item h3 {
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+#features .features-items .items-box .item p {
+  color: #666666;
+  line-height: 28px;
+  margin: 0 0 15px;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 15px;
+}
+/*# sourceMappingURL=styles.css.map */

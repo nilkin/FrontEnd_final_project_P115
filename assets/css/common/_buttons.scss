@@ -1,0 +1,36 @@
+.my-btn-primary {
+    background-color: $color-main;
+    padding: 18px 48px;
+    display: inline-block;
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 25px;
+    text-transform: uppercase;
+    @include transition(all 0.35s ease-in-out);
+    letter-spacing: 1px;
+    overflow: hidden;
+    border-radius: inherit;
+    color: $color-white;
+    border-radius: 30px;
+
+}
+
+.fa-plus {
+    border: 1px dotted white;
+    padding: 6px;
+    border-radius: 50%;
+    background-color: $color-main;
+}
+.btn-grad {
+    background-image: $main-gradient;
+    &:hover {
+        background-position: right center;
+        background-image: $hover-gradient;
+        color: $color-white;
+    }
+}
+
+.btn-secondary {
+    background-color: white;
+}
