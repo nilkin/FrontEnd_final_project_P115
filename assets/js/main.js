@@ -29,5 +29,12 @@ $(document).ready(function () {
         // autoplay: true,
         autoplayTimeout: 5000,
     })
+
+    $('.timer').countTo();
+    $('.fun-fact').appear(function() {
+        $('.timer').countTo();
+    }, {
+        accY: -100
+    });
 });
 
