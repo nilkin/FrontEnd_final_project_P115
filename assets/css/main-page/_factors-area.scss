@@ -15,10 +15,10 @@
                     line-height: 1;
                     margin-top: -5px;
                     margin-bottom: 15px;
-                    color: #232323;
+                    color: $color-black;
                     background-clip: text;
                     -webkit-text-fill-color: transparent;
-                    background: linear-gradient(90deg, rgba(3, 25, 65, 1) 0%, rgba(67, 126, 235, 1) 100%);
+                    background: $icon-gradient;
                     -webkit-background-clip: text;
                     text-align: center;
                 }
@@ -29,7 +29,7 @@
                 font-weight: 600;
                 font-size: 18px;
                 margin-bottom: -5px;
-                color: #232323;
+                color: $color-black;
                 text-align: center;
             }
         }

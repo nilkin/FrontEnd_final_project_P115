@@ -31,10 +31,21 @@ $(document).ready(function () {
     })
 
     $('.timer').countTo();
-    $('.fun-fact').appear(function() {
-        $('.timer').countTo();
-    }, {
-        accY: -100
+
+    function wowAnimation() {
+        let wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile: false,
+            live: true
+        });
+        wow.init();
+    }
+    $(window).on('load', function () {
+        wowAnimation();
     });
+
+
 });
 
