@@ -612,8 +612,8 @@ h6 {
 }
 
 #services-items .container .main-items .item {
-  -webkit-box-shadow: 0 5px 30px 0 #6666668a;
-          box-shadow: 0 5px 30px 0 #6666668a;
+  -webkit-box-shadow: 0 5px 30px 0 #cccccc;
+          box-shadow: 0 5px 30px 0 #cccccc;
   padding: 50px 30px;
   background: #ffffff;
   position: relative;
@@ -701,5 +701,93 @@ h6 {
   border-radius: 50%;
   background-color: #ffffff;
   color: #437eeb;
+}
+
+#work-process .container .heading h4 {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #437eeb;
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+#work-process .container .heading h2 {
+  display: block;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 0;
+  font-size: 36px;
+}
+
+#work-process .work-pro {
+  margin-top: 4rem;
+}
+
+#work-process .work-pro .single-item .item {
+  height: 20rem;
+  position: relative;
+}
+
+#work-process .work-pro .single-item .item .icon i {
+  background: -webkit-gradient(linear, left top, right top, from(#1e55bd), to(#437eeb));
+  background: linear-gradient(90deg, #1e55bd 0%, #437eeb 100%);
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 50px;
+  height: 120px;
+  left: 50%;
+  line-height: 120px;
+  margin-left: -60px;
+  position: absolute;
+  text-align: center;
+  top: -10px;
+  width: 120px;
+  z-index: 1;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+#work-process .work-pro .single-item .item .icon i::before {
+  font-size: 4rem;
+  margin-left: 0px;
+  padding: 0px;
+}
+
+#work-process .work-pro .single-item .item .icon i span {
+  background: #ffffff;
+  position: absolute;
+  right: 0;
+  top: -10px;
+  height: 35px;
+  line-height: 35px;
+  width: 35px;
+  z-index: 1;
+  color: #437eeb;
+  font-weight: 800;
+  font-size: 14px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+          box-shadow: 0 0 10px #cccccc;
+}
+
+#work-process .work-pro .single-item .item .info {
+  position: absolute;
+  bottom: 0;
+}
+
+#work-process .work-pro .single-item .item .info h4 {
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+#work-process .work-pro .single-item .item .info p {
+  color: #666666;
+  line-height: 28px;
+  margin: 0 0 15px;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 15px;
 }
 /*# sourceMappingURL=styles.css.map */

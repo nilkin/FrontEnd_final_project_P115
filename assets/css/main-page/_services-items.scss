@@ -3,7 +3,7 @@
     .container {
         .main-items {
             .item {
-                box-shadow: 0 5px 30px 0 #6666668a;
+                box-shadow: 0 5px 30px 0 $color-shadow;
                 padding: 50px 30px;
                 background: $color-white;
                 position: relative;

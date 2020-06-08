@@ -1,0 +1,90 @@
+#work-process {
+    .container {
+        .heading {
+            h4 {
+                text-transform: uppercase;
+                font-weight: 800;
+                color: $color-main;
+                font-size: 20px;
+                position: relative;
+                z-index: 1;
+                display: inline-block;
+            }
+            h2 {
+                display: block;
+                font-weight: 700;
+                position: relative;
+                margin-bottom: 0;
+                font-size: 36px;
+            }
+        }
+    }
+
+    .work-pro {
+        margin-top: 4rem;
+        .single-item {
+            .item {
+                height: 20rem;
+                position: relative;
+                .icon {
+                 
+                    i {
+                        background: $main-gradient;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        border-radius: 50%;
+                        color: $color-white;
+                        font-size: 50px;
+                        height: 120px;
+                        left: 50%;
+                        line-height: 120px;
+                        margin-left: -60px;
+                        position: absolute;
+                        text-align: center;
+                        top: -10px;
+                        width: 120px;
+                        z-index: 1;
+                        @include transition(all 0.35s ease-in-out);
+                        &::before {
+                            font-size: 4rem;
+                            margin-left: 0px;
+                            padding: 0px;
+                        }
+                        span {
+                            background: $color-white;
+                            position: absolute;
+                            right: 0;
+                            top: -10px;
+                            height: 35px;
+                            line-height: 35px;
+                            width: 35px;
+                            z-index: 1;
+                            color: $color-main;
+                            font-weight: 800;
+                            font-size: 14px;
+                            border-radius: 50%;
+                            box-shadow: 0 0 10px $color-shadow;
+                        }
+                    }
+                }
+
+                .info {
+                    position: absolute;
+                    bottom: 0;
+                    h4 {
+                        font-weight: 800;
+                        text-transform: capitalize;
+                    }
+                    p {
+                        color: $color-gray;
+                        line-height: 28px;
+                        margin: 0 0 15px;
+                        text-transform: none;
+                        font-weight: 400;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
