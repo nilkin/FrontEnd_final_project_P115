@@ -1,5 +1,7 @@
 #work-process {
+    
     .container {
+        margin-top: 10rem;
         .heading {
             h4 {
                 text-transform: uppercase;
@@ -24,7 +26,7 @@
         margin-top: 4rem;
         .single-item {
             .item {
-                height: 20rem;
+                height: 22rem;
                 position: relative;
                 .icon {
                  
@@ -46,7 +48,7 @@
                         z-index: 1;
                         @include transition(all 0.35s ease-in-out);
                         &::before {
-                            font-size: 4rem;
+                            font-size: 3rem;
                             margin-left: 0px;
                             padding: 0px;
                         }
@@ -81,7 +83,7 @@
                         margin: 0 0 15px;
                         text-transform: none;
                         font-weight: 400;
-                        font-size: 15px;
+                        font-size: 14px;
                     }
                 }
             }

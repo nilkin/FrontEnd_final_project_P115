@@ -703,6 +703,10 @@ h6 {
   color: #437eeb;
 }
 
+#work-process .container {
+  margin-top: 10rem;
+}
+
 #work-process .container .heading h4 {
   text-transform: uppercase;
   font-weight: 800;
@@ -726,7 +730,7 @@ h6 {
 }
 
 #work-process .work-pro .single-item .item {
-  height: 20rem;
+  height: 22rem;
   position: relative;
 }
 
@@ -750,7 +754,7 @@ h6 {
 }
 
 #work-process .work-pro .single-item .item .icon i::before {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-left: 0px;
   padding: 0px;
 }
@@ -788,6 +792,6 @@ h6 {
   margin: 0 0 15px;
   text-transform: none;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14px;
 }
 /*# sourceMappingURL=styles.css.map */
