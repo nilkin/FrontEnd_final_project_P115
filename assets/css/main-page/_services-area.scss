@@ -1,36 +1,31 @@
 #services-area {
-    position: relative;
-    top: 20rem;
+margin-top: 14rem;
     .shape-anime {
         z-index: -3;
         position: absolute;
         right: 7rem;
         bottom: 1rem;
-          width: 200px;
-          height: 200px;
-          
-          animation-name: spin;
-          animation-duration: 5000ms;
-          animation-iteration-count: infinite;
-          animation-timing-function: linear; 
-          /* transform: rotate(3deg); */
-           /* transform: rotate(0.3rad);/ */
-           /* transform: rotate(3grad); */ 
-           /* transform: rotate(.03turn);  */
-        
-        
+        width: 200px;
+        height: 200px;
+
+        animation-name: spin;
+        animation-duration: 5000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        @include transform(rotate(3deg));
+
         @keyframes spin {
             from {
-                transform:rotate(0deg);
+                transform: rotate(0deg);
             }
             to {
-                transform:rotate(360deg);
+                transform: rotate(360deg);
             }
         }
-img{
-    position: absolute;
-    right: 0;
-}
+        img {
+            position: absolute;
+            right: 0;
+        }
     }
     .container {
         .service-item {
@@ -41,14 +36,12 @@ img{
                 font-size: 36px;
             }
             p {
-             
-                    color: $color-gray;
-                    line-height: 28px;
-                    margin: 0 0 15px;
-                    text-transform: none;
-                    font-weight: 400;
-                    font-size: 17px;
-            
+                color: $color-gray;
+                line-height: 28px;
+                margin: 0 0 15px;
+                text-transform: none;
+                font-weight: 400;
+                font-size: 17px;
             }
         }
     }

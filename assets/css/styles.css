@@ -88,6 +88,24 @@
   transition: all 0.25s ease-in-out;
 }
 
+.btn-third a {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  display: inline-block;
+  padding: 10px 30px;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  z-index: 5;
+}
+
+.btn-third a i {
+  padding: 6px 9px;
+  border: 0.5px solid #ffffff;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #437eeb;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   font-weight: 500;
@@ -492,14 +510,7 @@ h6 {
 }
 
 #factors-area {
-  position: relative;
-  top: 20rem;
-}
-
-#factors-area .container {
-  position: absolute;
-  top: 45%;
-  left: 12%;
+  margin-top: 1rem;
 }
 
 #factors-area .container .client-statics .statics .timer {
@@ -528,8 +539,7 @@ h6 {
 }
 
 #services-area {
-  position: relative;
-  top: 20rem;
+  margin-top: 14rem;
 }
 
 #services-area .shape-anime {
@@ -547,10 +557,11 @@ h6 {
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  /* transform: rotate(3deg); */
-  /* transform: rotate(0.3rad);/ */
-  /* transform: rotate(3grad); */
-  /* transform: rotate(.03turn);  */
+  -webkit-transform: rotate(rotate(3deg));
+          transform: rotate(rotate(3deg));
+  transform: rotate(rotate(3deg));
+  transform: rotate(rotate(3deg));
+  transform: rotate(rotate(3deg));
 }
 
 @-webkit-keyframes spin {
@@ -594,5 +605,101 @@ h6 {
   text-transform: none;
   font-weight: 400;
   font-size: 17px;
+}
+
+#services-items {
+  margin-top: 10rem;
+}
+
+#services-items .container .main-items .item {
+  -webkit-box-shadow: 0 5px 30px 0 #6666668a;
+          box-shadow: 0 5px 30px 0 #6666668a;
+  padding: 50px 30px;
+  background: #ffffff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+#services-items .container .main-items .item:hover p {
+  color: #ffffff;
+}
+
+#services-items .container .main-items .item:hover h4 {
+  color: #ffffff;
+}
+
+#services-items .container .main-items .item:hover .serv-button a {
+  color: #ffffff;
+}
+
+#services-items .container .main-items .item:hover .serv-button a i {
+  background-color: #ffffff;
+  color: #437eeb;
+}
+
+#services-items .container .main-items .item:hover::after {
+  bottom: 0%;
+  opacity: 1;
+  z-index: -1;
+}
+
+#services-items .container .main-items .item img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 30px;
+  min-height: 100px;
+}
+
+#services-items .container .main-items .item h4 {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#services-items .container .main-items .item p {
+  font-family: "Nunito", sans-serif;
+  color: #666666;
+  line-height: 28px;
+  margin: 0 0 15px;
+  text-transform: none;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+#services-items .container .main-items .item::after {
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#437eeb), to(#093ac1));
+  background: linear-gradient(to bottom, #437eeb 0%, #093ac1 100%);
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+#services-items .container .main-items .item .serv-button a {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  display: inline-block;
+  padding: 10px 30px;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  z-index: 5;
+}
+
+#services-items .container .main-items .item .serv-button a i {
+  padding: 6px 9px;
+  border: 0.5px solid #ffffff;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #437eeb;
 }
 /*# sourceMappingURL=styles.css.map */

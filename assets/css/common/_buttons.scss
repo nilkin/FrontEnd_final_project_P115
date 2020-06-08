@@ -79,3 +79,22 @@
         @include transition(all 0.25s ease-in-out);
     }
 }
+
+.btn-third {
+    a {
+        font-family: $font-first;
+        font-size: 16px;
+        display: inline-block;
+        padding: 10px 30px;
+        border: 1px solid $color-white;
+        border-radius: 50px;
+        z-index: 5;
+        i {
+            padding: 6px 9px;
+            border: 0.5px solid $color-white;
+            border-radius: 50%;
+            background-color: $color-white;
+            color: $color-main;
+        }
+    }
+}

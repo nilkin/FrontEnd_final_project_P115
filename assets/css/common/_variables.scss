@@ -2,11 +2,10 @@
 
 $color-main: #437eeb;
 $color-secondary: #1e55bd;
-$color-third:#3971d8;
-$color-fourth:#031941;
+$color-third: #3971d8;
+$color-fourth: #031941;
 $color-white: #ffffff;
-
-
+$color-fifth: #093ac1;
 $color-black: #232323;
 $color-gray: #666666;
 
@@ -47,4 +46,9 @@ $title-sizes: (
   -o-box-shadow: $property;
   -ms-box-shadow: $property;
 }
-
+@mixin transform($transform) {
+  transform: rotate($transform);
+  transform: rotate($transform);
+  transform: rotate($transform);
+  transform: rotate($transform);
+}
