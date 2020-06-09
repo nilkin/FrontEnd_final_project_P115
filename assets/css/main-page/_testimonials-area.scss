@@ -1,0 +1,99 @@
+#testimonials-area {
+    margin-top: 13rem;
+
+    .testimonia {
+        margin-left: 24%;
+        .container {
+            .heading {
+                h4 {
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    color: $color-main;
+                    font-size: 20px;
+                    position: relative;
+                    z-index: 1;
+                    display: inline-block;
+                }
+                h2 {
+                    display: block;
+                    font-weight: 700;
+                    position: relative;
+                    margin-bottom: 0;
+                    font-size: 36px;
+                }
+            }
+            .tm-items {
+                #t-carousel {
+                    .carousel-inner {
+                        position: relative;
+                        .carousel-item {
+                            i {
+                                border-radius: 50%;
+                                display: block;
+                                height: 70px;
+                                line-height: 70px;
+                                margin: auto auto 30px;
+                                position: relative;
+                                text-align: center;
+                                width: 70px;
+                                display: inline-block;
+                                color: $color-main;
+                                font-size: 25px;
+                            }
+                            p {
+                                color: $color-gray;
+                                line-height: 28px;
+                                margin: 0 0 15px;
+                                text-transform: none;
+                                font-weight: 400;
+                                font-size: 15px;
+                            }
+                            h4 {
+                                color: $color-gray;
+                                line-height: 28px;
+                                margin: 0 0 15px;
+                                text-transform: none;
+                                font-weight: 400;
+                            }
+                            span {
+                                color: $color-main;
+                                font-weight: 600;
+                                text-transform: capitalize;
+                            }
+                        }
+                    }
+                    .carousel-indicators {
+                        position: absolute;
+                        top: 120%;
+                        right: 8%;
+                        li {
+                            margin-left: 14%;
+                            
+                            &.active {
+                                transition: all .2s ease-in-out;
+                                // transition: all 0.2s;
+                                img {
+                                    position: relative;
+                                    bottom: 1rem;
+                                    transform: scale(1.5);
+                                    background: $hover-gradient;
+                                }
+                            }
+                            img {
+                                display: block;
+                                height: auto;
+                                width: 100%;
+                                padding: 5px;
+                                border-radius: 50%;
+                                height: 55px;
+                                width: 55px;
+                                min-width: 55px;
+                                min-height: 55px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

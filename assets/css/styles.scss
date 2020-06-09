@@ -5,10 +5,15 @@
 @import "common/buttons";
 @import "common/reset";
 
+// head-foot section
+@import "head-foot/headnav";
+@import "head-foot/head-nav";
+@import "head-foot/footer-area";
+
+
 // page sections 
 
-@import "main-page/headnav";
-@import "main-page/head-nav";
+
 @import "main-page/tech-system";
 @import "main-page/features";
 @import "main-page/about_us";
@@ -17,3 +22,5 @@
 @import "main-page/services-items";
 @import "main-page/work-process";
 @import "main-page/skill-area";
+@import "main-page/testimonials-area";
+@import "main-page/blog-area";

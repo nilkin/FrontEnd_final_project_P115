@@ -1,7 +1,7 @@
 body {
     font-family: $font-first;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 15px;
     color: $color-black;
     font-style: normal;
 }
@@ -52,4 +52,17 @@ h6 {
     font-style: normal;
     font-weight: 500;
     text-transform: normal;
+    line-height: 1.2;
+}
+
+p{
+    color: $color-gray;
+    line-height: 28px;
+    margin: 0 0 15px;
+    text-transform: none;
+    font-weight: 400;
+}
+
+strong {
+    color: $color-gray;
 }
