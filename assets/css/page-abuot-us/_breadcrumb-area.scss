@@ -1,0 +1,85 @@
+#breadcrumb-area {
+    
+    background: $main-gradient;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+    bottom: 155px;
+  
+    .backgraund-shape{
+        img{
+            height: 26.25rem;
+        }
+    }
+    .breadcrumb-content {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+  
+        .text-item {
+            h1 {
+                width: 210px;
+                font-size: 36px;
+                font-weight: 700;
+                color: $color-white;
+            }
+  
+            .breadcrumb {
+                background: transparent;
+                // display: flex;
+                justify-content: space-around;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                z-index: 1;
+                color: $color-white;
+                width: 150%;
+                position: absolute;
+                left: -16%;
+                .list-after {
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    display: inline-block;
+                    color: $color-white;
+                    &::after {
+                        color: #ffffff;
+                        position: absolute;
+                        right: 141px;
+                        height: 8px;
+                        width: 8px;
+                        border: 2px solid #ffffffb3;
+                        border-radius: 50%;
+                        top: 6px;
+                        content: "";
+                    }
+                    a {
+                        color: $color-white;
+  
+                        i {
+                            margin-right: 5px;
+                            color: $color-white;
+                        }
+                    }
+                    .active {
+                        text-decoration: underline;
+                    }
+                }
+  
+                .list-before{
+                    &::after {
+                        color: #ffffff;
+                        position: absolute;
+                        right: 66px;
+                        height: 8px;
+                        width: 8px;
+                        border: 2px solid #ffffffb3;
+                        border-radius: 50%;
+                        top: 6px;
+                        content: "";
+                    }
+                }
+            }
+        }
+    }
+  }

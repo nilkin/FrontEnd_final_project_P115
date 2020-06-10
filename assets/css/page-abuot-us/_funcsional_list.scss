@@ -1,0 +1,21 @@
+.first {
+    color: red;
+
+    .list-item {
+        .item {
+            &::before {
+                font-size: 23px;
+            }
+            i {
+                h4 {
+                    font-size: 23px;
+                }
+                ul {
+                    li {
+                        font-size: 23px;
+                    }
+                }
+            }
+        }
+    }
+}

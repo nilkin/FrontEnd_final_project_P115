@@ -9,13 +9,15 @@ $color-shadow:#cccccc;
 $color-fifth: #093ac1;
 $color-black: #232323;
 $color-gray: #666666;
+$color-sixth: #023ba6;
+
 
 // Gradient
 
 $main-gradient: linear-gradient(90deg, $color-secondary 0%, $color-main 100%);
 $hover-gradient: linear-gradient(90deg, $color-main 0%, $color-secondary 100%);
 $icon-gradient: linear-gradient(90deg, $color-fourth 0%, $color-third 100%);
-
+$bg-gradient: linear-gradient(90deg, $color-sixth 0%, $color-main 100%);
 // font families
 
 $font-first: "Nunito", sans-serif;
@@ -30,31 +32,3 @@ $title-sizes: (
   "h6": 18,
 );
 
-// @mixin
-
-@mixin transition($property) {
-  -webkit-transition: $property;
-  -moz-transition: $property;
-  -ms-transition: $property;
-  -o-transition: $property;
-  transition: $property;
-}
-
-@mixin box-shadow($property) {
-  box-shadow: $property;
-  -moz-box-shadow: $property;
-  -webkit-box-shadow: $property;
-  -o-box-shadow: $property;
-  -ms-box-shadow: $property;
-}
-@mixin transform($transform) {
-  transform: rotate($transform);
-  transform: rotate($transform);
-  transform: rotate($transform);
-  transform: rotate($transform);
-}
-
-.default-margin{
-  padding-top: 14rem;
-  padding-bottom: 6rem;
-}

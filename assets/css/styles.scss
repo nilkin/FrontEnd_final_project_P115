@@ -4,15 +4,19 @@
 @import "common/font";
 @import "common/buttons";
 @import "common/reset";
+@import "common/main_classes";
+
+// common section css
+@import "main-page/skill-area";
+
 
 // head-foot section
-@import "head-foot/headnav";
 @import "head-foot/head-nav";
 @import "head-foot/footer-area";
+@import "head-foot/head-nav-second";
+@import "head-foot/footer-area-second";
 
-
-// page sections 
-
+//main page html 
 
 @import "main-page/tech-system";
 @import "main-page/features";
@@ -21,6 +25,13 @@
 @import "main-page/services-area";
 @import "main-page/services-items";
 @import "main-page/work-process";
-@import "main-page/skill-area";
 @import "main-page/testimonials-area";
 @import "main-page/blog-area";
+
+
+// page about us
+
+@import "page-abuot-us/breadcrumb-area";
+@import "page-abuot-us/data-solutions";
+@import "page-abuot-us/funcsional_list";
+@import "page-abuot-us/our_story_area";

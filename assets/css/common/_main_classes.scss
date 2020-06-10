@@ -1,0 +1,56 @@
+.head-title{
+    h4{
+        text-transform: uppercase;
+    font-weight: 800;
+    color: #437eeb;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    }
+
+    h2{
+        display: block;
+        font-weight: 700;
+        position: relative;
+        margin-bottom: 0;
+        font-size: 36px;
+    
+    }
+}
+
+.default-padding{
+    padding-top: 120px;
+    padding-bottom: 110px;
+  }
+  
+  
+  .default-color{
+    color: $color-white;
+  }
+
+// @mixin
+
+@mixin transition($property) {
+    -webkit-transition: $property;
+    -moz-transition: $property;
+    -ms-transition: $property;
+    -o-transition: $property;
+    transition: $property;
+  }
+  
+  @mixin box-shadow($property) {
+    box-shadow: $property;
+    -moz-box-shadow: $property;
+    -webkit-box-shadow: $property;
+    -o-box-shadow: $property;
+    -ms-box-shadow: $property;
+  }
+  @mixin transform($transform) {
+    transform: rotate($transform);
+    transform: rotate($transform);
+    transform: rotate($transform);
+    transform: rotate($transform);
+  }
+  
+ 

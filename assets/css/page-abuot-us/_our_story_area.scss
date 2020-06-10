@@ -1,0 +1,22 @@
+#our-story-area {
+    background-color: red;
+    .container {
+        .story-items {
+            .single-item {
+                .item {
+                    span{
+                        font-size: 23px;
+                    }
+
+                    h4{
+                        font-size: 23px;
+                    }
+                    p{
+                        font-size: 23px;
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 08/06/2020 05:56
+  	Creation date: 10/06/2020 14:58
   	*/
 
 @font-face {
@@ -30,9 +30,12 @@ font-style: normal;
 margin-left: 20px;
 }
 
-.flaticon-data:before { content: "\f100"; }
-.flaticon-trophy:before { content: "\f101"; }
-.flaticon-crosshair:before { content: "\f102"; }
-.flaticon-problem:before { content: "\f103"; }
-.flaticon-data-collection:before { content: "\f104"; }
-.flaticon-data-transfer:before { content: "\f105"; }
+.flaticon-robot:before { content: "\f100"; }
+.flaticon-machine-learning:before { content: "\f101"; }
+.flaticon-setting:before { content: "\f102"; }
+.flaticon-target:before { content: "\f103"; }
+.flaticon-competition:before { content: "\f104"; }
+.flaticon-data:before { content: "\f105"; }
+.flaticon-problem:before { content: "\f106"; }
+.flaticon-data-collection:before { content: "\f107"; }
+.flaticon-cloud-computing:before { content: "\f108"; }
