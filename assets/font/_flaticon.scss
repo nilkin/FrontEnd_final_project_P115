@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 10/06/2020 14:58
+    Creation date: 10/06/2020 18:22
     */
 
     @font-face {
@@ -37,22 +37,34 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-robot:before { content: "\f100"; }
-.flaticon-machine-learning:before { content: "\f101"; }
-.flaticon-setting:before { content: "\f102"; }
-.flaticon-target:before { content: "\f103"; }
-.flaticon-competition:before { content: "\f104"; }
-.flaticon-data:before { content: "\f105"; }
-.flaticon-problem:before { content: "\f106"; }
-.flaticon-data-collection:before { content: "\f107"; }
-.flaticon-cloud-computing:before { content: "\f108"; }
+    .flaticon-target:before { content: "\f100"; }
+.flaticon-data:before { content: "\f101"; }
+.flaticon-problem:before { content: "\f102"; }
+.flaticon-data-collection:before { content: "\f103"; }
+.flaticon-search:before { content: "\f104"; }
+.flaticon-list:before { content: "\f105"; }
+.flaticon-check:before { content: "\f106"; }
+.flaticon-robot:before { content: "\f107"; }
+.flaticon-machine-learning:before { content: "\f108"; }
+.flaticon-email:before { content: "\f109"; }
+.flaticon-phone-ringing:before { content: "\f10a"; }
+.flaticon-countdown:before { content: "\f10b"; }
+.flaticon-competition:before { content: "\f10c"; }
+.flaticon-cloud-data:before { content: "\f10d"; }
+.flaticon-server:before { content: "\f10e"; }
     
-    $font-Flaticon-robot: "\f100";
-    $font-Flaticon-machine-learning: "\f101";
-    $font-Flaticon-setting: "\f102";
-    $font-Flaticon-target: "\f103";
-    $font-Flaticon-competition: "\f104";
-    $font-Flaticon-data: "\f105";
-    $font-Flaticon-problem: "\f106";
-    $font-Flaticon-data-collection: "\f107";
-    $font-Flaticon-cloud-computing: "\f108";
+    $font-Flaticon-target: "\f100";
+    $font-Flaticon-data: "\f101";
+    $font-Flaticon-problem: "\f102";
+    $font-Flaticon-data-collection: "\f103";
+    $font-Flaticon-search: "\f104";
+    $font-Flaticon-list: "\f105";
+    $font-Flaticon-check: "\f106";
+    $font-Flaticon-robot: "\f107";
+    $font-Flaticon-machine-learning: "\f108";
+    $font-Flaticon-email: "\f109";
+    $font-Flaticon-phone-ringing: "\f10a";
+    $font-Flaticon-countdown: "\f10b";
+    $font-Flaticon-competition: "\f10c";
+    $font-Flaticon-cloud-data: "\f10d";
+    $font-Flaticon-server: "\f10e";

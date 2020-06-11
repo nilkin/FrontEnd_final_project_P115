@@ -11,13 +11,14 @@ $color-black: #232323;
 $color-gray: #666666;
 $color-sixth: #023ba6;
 
-
+// linear-gradient(90deg, rgba(30,85,189,1) 0%, rgba(67,126,235,1) 100%)
 // Gradient
 
 $main-gradient: linear-gradient(90deg, $color-secondary 0%, $color-main 100%);
 $hover-gradient: linear-gradient(90deg, $color-main 0%, $color-secondary 100%);
 $icon-gradient: linear-gradient(90deg, $color-fourth 0%, $color-third 100%);
 $bg-gradient: linear-gradient(90deg, $color-sixth 0%, $color-main 100%);
+$vertical-gradient: linear-gradient(to bottom, $color-main 0%, $color-fifth 100%);
 // font families
 
 $font-first: "Nunito", sans-serif;

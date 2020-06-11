@@ -1,0 +1,63 @@
+#team-members{
+    .members{
+        .member-items{
+            .member-item{
+                margin-bottom: 50px;
+                .item{
+                    margin-bottom: -5px;
+                    .image{
+                        position: relative;
+                        img{
+                            border-radius: 50%;
+                            border: 1px solid $color-shadow;
+                            width: 70%;
+                        }
+                    }
+                }
+                .info{
+                    padding: 30px;
+                    margin-top: -15px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    .social{
+                        position: relative;
+                        left: 0;
+                        top: -25px;
+                        transition: all 0.35s ease-in-out;
+                        ul{
+                            display: inline-block;
+                            background: $main-gradient;
+                            padding: 15px 38px;
+                            padding-right: 11px;
+                            box-shadow: 0 0 10px $color-shadow;
+                            border-radius: 30px;
+                            transition: all 0.35s ease-in-out;
+                            li{
+                                display: inline-block;
+                                margin-right: 25px;
+                                a{
+                                    i{
+                                        color: $color-white !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    h4{
+                        font-weight: 700;
+                        margin-bottom: 10px;
+                        text-transform: capitalize;
+                        font-size: 20px;
+                    }
+                    p{
+                        margin-bottom: -5px;
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: $color-gray;
+                    }
+                }
+            }
+        }
+    }
+}

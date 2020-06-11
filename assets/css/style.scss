@@ -1,0 +1,42 @@
+ // common
+ @import 'common/variables';
+ @import 'common/main_classes';
+ @import 'common/buttons';
+ @import 'common/font';
+ @import 'common/reset';
+
+ // common section css
+@import "main-page/skill-area";
+@import "main-page/blog-area";
+
+
+// head-foot section
+@import "head-foot/head-nav";
+@import "head-foot/footer-area";
+@import "head-foot/head-nav-second";
+@import "head-foot/footer-area-second";
+
+//main page html 
+
+@import "main-page/tech-system";
+@import "main-page/features";
+@import "main-page/about_us";
+@import "main-page/factors-area";
+@import "main-page/services-area";
+@import "main-page/services-items";
+@import "main-page/work-process";
+@import "main-page/testimonials-area";
+
+
+
+// page about us
+
+@import "page-abuot-us/breadcrumb-area";
+@import "page-abuot-us/data-solutions";
+@import "page-abuot-us/funcsional_list";
+@import "page-abuot-us/our_story_area";
+@import "page-abuot-us/team-members";
+
+// page blog standart
+
+@import "page-blog-standart/pag-num";

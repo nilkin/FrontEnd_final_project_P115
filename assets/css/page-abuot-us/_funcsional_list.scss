@@ -1,21 +1,98 @@
-.first {
-    color: red;
-
-    .list-item {
-        .item {
-            &::before {
-                font-size: 23px;
-            }
-            i {
-                h4 {
-                    font-size: 23px;
-                }
-                ul {
-                    li {
-                        font-size: 23px;
-                    }
-                }
-            }
-        }
+#funcsional-list {
+  .list-item {
+    .icon {
+      position: relative;
+      left: -1rem;
+      font-size: 5rem;
+      color: $color-white;
+      &::before {
+        font-size: 4.37rem;
+      }
     }
+    .item {
+      box-shadow: 0 5px 30px 0 rgba(214, 215, 216, 0.57);
+      padding: 19px 37px;
+      border-radius: 10px;
+      background: $vertical-gradient;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      text-align: left;
+      &::before {
+        position: absolute;
+        right: -50px;
+        top: -50px;
+        content: "";
+        height: 150px;
+        width: 150px;
+        background: rgba(255, 255, 155, 0.1);
+        border-radius: 50%;
+        transition: all 0.35s ease-in-out;
+      }
+      &:hover {
+        &::before {
+          position: absolute;
+          right: -30px;
+          top: -30px;
+          content: "";
+          height: 150px;
+          width: 150px;
+          background: rgba(255, 255, 155, 0.1);
+          border-radius: 50%;
+          transition: all 0.35s ease-in-out;
+        }
+        ul {
+          color: $color-white;
+          padding: 0;
+          padding-top: 1rem;
+          &::after {
+            position: absolute;
+            right: -30px;
+            top: -30px;
+            content: "";
+            height: 100px;
+            width: 100px;
+            background: rgba(255, 255, 155, 0.1);
+            border-radius: 50%;
+            transition: all 0.35s ease-in-out;}
+          }
+      }
+      h4 {
+        text-transform: capitalize;
+        font-size: 24px;
+        font-weight: 800;
+        margin-bottom: 25px;
+        color: $color-white;
+      }
+      ul {
+        color: $color-white;
+        padding: 0;
+        padding-top: 1rem;
+        &::after {
+          position: absolute;
+          right: -50px;
+          top: -50px;
+          content: "";
+          height: 100px;
+          width: 100px;
+          background: rgba(255, 255, 155, 0.1);
+          border-radius: 50%;
+          transition: all 0.35s ease-in-out;
+        }
+        li {
+          i {
+            position: relative;
+            bottom: 4px;
+            font-size: 6px;
+            border: 1px solid;
+            border-radius: 50%;
+            margin-right: 7px;
+            color: $color-white;
+            padding: 3px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
 }

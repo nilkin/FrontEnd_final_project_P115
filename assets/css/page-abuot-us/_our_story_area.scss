@@ -1,22 +1,76 @@
 #our-story-area {
-    margin-top: 32rem;
-    .container {
-        .story-items {
-            .single-item {
-                .item {
-                    span{
-                        font-size: 23px;
-                    }
+  margin-top: 15rem;
+  .container {
+    .story-items {
+      margin-top: 4rem;
+      .single-item {
+        .item {
+          &.active {
+            span {
+              background: linear-gradient(
+                90deg,
+                rgba(30, 85, 189, 1) 0%,
+                rgba(67, 126, 235, 1) 100%
+              );
 
-                    h4{
-                        font-size: 23px;
-                    }
-                    p{
-                        font-size: 23px;
-                        color: red;
-                    }
-                }
+              color: #ffffff;
+              border: none;
+              line-height: 54px;
+              transition: all 0.35s ease-in-out;
+              border-radius: 50%;
+              font-weight: 800;
+              margin-bottom: 30px;
+              display: inline-block;
+              height: 50px;
+              width: 50px;
             }
+          }
+          &:hover {
+            span {
+              background: linear-gradient(
+                90deg,
+                rgba(30, 85, 189, 1) 0%,
+                rgba(67, 126, 235, 1) 100%
+              );
+
+              color: #ffffff;
+              border: none;
+              line-height: 54px;
+              transition: all 0.35s ease-in-out;
+              border-radius: 50%;
+              font-weight: 800;
+              margin-bottom: 30px;
+              display: inline-block;
+              height: 50px;
+              width: 50px;
+            }
+          }
+          span {
+            color: $color-black;
+            border: 5px solid $color-main;
+            line-height: 43px;
+            transition: all 0.35s ease-in-out;
+            border-radius: 50%;
+            font-weight: 800;
+            margin-bottom: 30px;
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+          }
+
+          h4 {
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+            font-size: 20px;
+          }
+          p {
+            margin-bottom: -5px;
+            font-size: 14px;
+            font-weight: 600;
+          }
         }
+      }
     }
+  }
 }

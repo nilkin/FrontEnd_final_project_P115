@@ -76,15 +76,21 @@
         .attr-nav {
             .side-menu {
                 position: absolute;
-                right: 11rem;
+                right: 8rem;
             }
             a {
                 i {
                     font-size: 1rem;
-                    color: black;
+                    color: $color-black;
                     position: relative;
-                    top: 0.5rem;
+                    top: -0.5rem;
                     right: 1rem;
+                    margin-right: 0.2rem;
+                    top: 0rem;
+
+
+                    
+                    
                 }
             }
         }
