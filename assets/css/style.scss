@@ -8,7 +8,9 @@
  // common section css
 @import "main-page/skill-area";
 @import "main-page/blog-area";
-
+@import "page-abuot-us/breadcrumb-area";
+@import "main-page/services-items";
+@import "main-page/work-process";
 
 // head-foot section
 @import "head-foot/head-nav";
@@ -23,15 +25,11 @@
 @import "main-page/about_us";
 @import "main-page/factors-area";
 @import "main-page/services-area";
-@import "main-page/services-items";
-@import "main-page/work-process";
 @import "main-page/testimonials-area";
-
-
 
 // page about us
 
-@import "page-abuot-us/breadcrumb-area";
+
 @import "page-abuot-us/data-solutions";
 @import "page-abuot-us/funcsional_list";
 @import "page-abuot-us/our_story_area";
@@ -40,3 +38,7 @@
 // page blog standart
 
 @import "page-blog-standart/pag-num";
+
+// page blog services
+
+@import "page-services/start-us";

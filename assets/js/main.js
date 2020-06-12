@@ -43,7 +43,7 @@ $(document).ready(function () {
     }
 
 
-    $('.owl-carousel').owlCarousel({
+    $('.features-items').owlCarousel({
         stagePadding: 50,
         loop: true,
         merge: true,
@@ -52,6 +52,23 @@ $(document).ready(function () {
         margin: 40,
         // autoplay: true,
         autoplayTimeout: 5000,
+    });
+
+    $('#services-items .services-carousel').owlCarousel({
+        loop:false,
+        margin:10,
+   
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:3
+            }
+        }
     })
 
     $('.timer').countTo();

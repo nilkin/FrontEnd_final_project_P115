@@ -1,0 +1,58 @@
+#start-us {
+  height: 42rem;
+  .backgraund-shape {
+    img {
+      position: relative;
+      bottom: 32rem;
+      height: 43rem;
+    }
+  }
+  background: $bg-gradient;
+  .container {
+    .content-items {
+      .banner {
+        position: relative;
+        top: 1rem;
+      }
+
+      position: relative;
+      top: 8rem;
+      .image-size {
+        img {
+          width: 126%;
+          position: relative;
+          left: 2rem;
+          bottom: 4rem;
+        }
+      }
+      h2 {
+        font-weight: 700;
+        line-height: 1.3;
+        margin-top: -5px;
+        margin-bottom: 30px;
+        color: $color-white;
+        span {
+          font-size: 36px;
+          display: block;
+          font-weight: 200;
+          margin-bottom: 20px;
+        }
+      }
+
+      p {
+        color: $color-gray;
+        line-height: 28px;
+        margin: 0 0 15px;
+        text-transform: none;
+        font-weight: 400;
+        font-family: $font-first;
+        font-size: 15px;
+        color: $color-white;
+      }
+
+      a {
+        margin-top: 12px;
+      }
+    }
+  }
+}
