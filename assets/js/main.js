@@ -1,16 +1,17 @@
 $(document).ready(function () {
     $("#head-nav .navbar-menu li a").mouseenter(function () {
-        $(this).children().removeClass("fa-angle-up");
-        $(this).children().addClass("fa-angle-down");
-    });
-    $("#head-nav .navbar-menu li a").mouseleave(function () {
         $(this).children().removeClass("fa-angle-down");
         $(this).children().addClass("fa-angle-up");
+
+    });
+    $("#head-nav .navbar-menu li a").mouseleave(function () {
+        $(this).children().removeClass("fa-angle-up");
+        $(this).children().addClass("fa-angle-down");
     });
     if ($("#head-nav").length) {
         $(window).scroll(function (e) {
             let scroll = $(window).scrollTop();
-            if (scroll > 5) {
+            if (scroll > 380) {
                 $('#head-nav').addClass("sticky-menu");
             } else {
                 $('#head-nav').removeClass("sticky-menu");
@@ -20,17 +21,18 @@ $(document).ready(function () {
     }
 
     $("#head-nav-second .navbar-menu li a").mouseenter(function () {
-        $(this).children().removeClass("fa-angle-up");
-        $(this).children().addClass("fa-angle-down");
-    });
-    $("#head-nav-second .navbar-menu li a").mouseleave(function () {
         $(this).children().removeClass("fa-angle-down");
         $(this).children().addClass("fa-angle-up");
+    });
+    $("#head-nav-second .navbar-menu li a").mouseleave(function () {
+        $(this).children().removeClass("fa-angle-up");
+        $(this).children().addClass("fa-angle-down");
+
     });
     if ($("#head-nav-second").length) {
         $(window).scroll(function (e) {
             let scroll = $(window).scrollTop();
-            if (scroll > 5) {
+            if (scroll > 380) {
                 $('#head-nav-second').addClass("sticky-menu-second");
                 $("#head-nav-second .navbar .anada-brand img").attr("src", "/assets/img/logo.png")
 
@@ -55,18 +57,18 @@ $(document).ready(function () {
     });
 
     $('#services-items .services-carousel').owlCarousel({
-        loop:false,
-        margin:10,
-   
-        responsive:{
-            0:{
-                items:1
+        loop: false,
+        margin: 10,
+
+        responsive: {
+            0: {
+                items: 1
             },
-            600:{
-                items:3
+            600: {
+                items: 3
             },
-            1000:{
-                items:3
+            1000: {
+                items: 3
             }
         }
     })

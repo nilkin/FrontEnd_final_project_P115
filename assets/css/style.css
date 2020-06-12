@@ -2116,4 +2116,72 @@ strong {
 #start-us .container .content-items a {
   margin-top: 12px;
 }
+
+#contact-area .contact-items {
+  margin-bottom: 7rem;
+}
+
+#contact-area .contact-items .info-items .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+#contact-area .contact-items .info-items .item .icon {
+  display: inline-block;
+  font-size: 40px;
+  background: -webkit-gradient(linear, left top, right top, from(#1e55bd), to(#437eeb));
+  background: linear-gradient(90deg, #1e55bd 0%, #437eeb 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#contact-area .contact-items .info-items .item .info {
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
+
+#contact-area .contact-items .info-items .item .info h5 {
+  text-transform: capitalize;
+  font-weight: 800;
+}
+
+#contact-area .contact-items .info-items .item .info p {
+  margin-bottom: 0;
+}
+
+#contact-area .contact-items h2 {
+  font-weight: 800;
+}
+
+#contact-area .contact-items form .comments {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 120px;
+}
+
+#contact-area .contact-items form button {
+  background: #ffffff;
+  display: inline-block;
+  padding: 10px 35px;
+  text-transform: capitalize;
+  font-weight: 700;
+  border-radius: 30px;
+  border: 2px solid #e7e7e7;
+  margin-top: 15px;
+}
+
+#contact-area .contact-items form button i {
+  margin-left: 5px;
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, right top, from(#1e55bd), to(#437eeb));
+  background: linear-gradient(90deg, #1e55bd 0%, #437eeb 100%);
+  color: #ffffff;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+}
 /*# sourceMappingURL=style.css.map */
