@@ -112,10 +112,13 @@
         height: 5.5rem;
         .nav-item {
             .nav-link {
+                color: $color-black;
                 &.active {
                     color: $color-black;
                 }
-                color: $color-black;
+                &:hover{
+                    color: $color-black;
+                }
             }
         }
 
@@ -127,6 +130,7 @@
                 a {
                     i {
                         color: $color-black;
+       
                     }
                 }
             }

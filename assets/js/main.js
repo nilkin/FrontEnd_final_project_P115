@@ -89,6 +89,13 @@ $(document).ready(function () {
         wowAnimation();
     });
 
+    $('#contact-area .contact-items form button').click(function(e){
+        e.preventDefault();
+        $('#contact-area .contact-items form #message').removeClass("d-none")
+       
+    })
+
+
 
 });
 

@@ -1,0 +1,40 @@
+#services-single-area {
+  h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    
+  }
+
+  h4 {
+    font-weight: 700;
+  }
+  h5 {
+    font-weight: 600;
+  }
+.card{
+    margin-bottom: 2rem;
+    i{
+        font-size: 21px;
+    }
+}
+  .services-content {
+    .text-content {
+      margin-bottom: 3rem;
+
+      ul {
+        padding: 0;
+        li {
+          color: $color-gray;
+          margin-bottom: 18px;
+          font-size: 16px;
+          position: relative;
+          i {
+            color: $color-main;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+
+  }
+}

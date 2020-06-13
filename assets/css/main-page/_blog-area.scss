@@ -57,6 +57,129 @@
           }
 
           .info {
+            blockquote {
+              .text-italic {
+                display: flex;
+                i {
+                  font-size: 36px;
+                  color: $color-main;
+                  align-self: center;
+                }
+                span {
+                  margin: 0;
+                  position: relative;
+                  z-index: 1;
+                  line-height: 34px;
+                  font-size: 18px;
+                  border-left: 2px solid #dddddd;
+                  padding-left: 25px;
+                  font-family: $font-first;
+                  font-style: italic;
+                  color: $color-gray;
+                  font-weight: 600;
+                }
+              }
+            }
+            &.head-text {
+              h3 {
+                font-weight: 700;
+              }
+              h4 {
+                font-weight: 700;
+              }
+
+              .listed {
+                margin-bottom: 2rem;
+                margin-top: 2rem;
+                padding: 0;
+                li {
+                  margin-bottom: 23px;
+                  color: $color-gray;
+                  position: relative;
+                  z-index: 1;
+                  padding-left: 18px;
+                  // list-style: disc !important;
+                  color: $color-black;
+                  &::after {
+                    position: absolute;
+                    left: 0;
+                    top: 6px;
+                    content: "";
+                    background: $color-gray;
+                    height: 7px;
+                    width: 7px;
+                    border-radius: 50%;
+                    margin-bottom: 1px;
+                    font-size: 16px;
+                  }
+                }
+              }
+
+              .post-pagi-area {
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                display: flex;
+                justify-content: space-between;
+                a {
+                  display: inline-block;
+                  font-weight: 800;
+                  text-transform: capitalize;
+                  color: #437eeb;
+                  padding: 12px 32px;
+                  border: 2px solid;
+                  border-radius: 30px;
+                }
+              }
+
+              .social-tags {
+                display: flex;
+                justify-content: space-between;
+                .tags {
+                  display: flex;
+
+                  a {
+                    margin-right: 2rem;
+                    display: block;
+                    color: $color-black;
+                    font-weight: 700;
+                  }
+                }
+                .sos-icons {
+                  ul {
+                    display: flex;
+                    justify-content: space-between;
+
+                    li {
+                      margin-left: 1rem;
+                      &.face {
+                        a {
+                          color: $color-main;
+                        }
+                      }
+                      &.twit {
+                        a {
+                          color: #1da1f2;
+                        }
+                      }
+                      &.pint {
+                        a {
+                          color: #bd081c;
+                        }
+                      }
+                      &.link {
+                        a {
+                          color: #0077b5;
+                        }
+                      }
+                      a {
+                        i {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
             padding: 30px;
             padding-top: 55px;
             .meta {
@@ -87,6 +210,89 @@
                 font-weight: 700;
                 &:hover {
                   color: inherit;
+                }
+              }
+            }
+          }
+        }
+
+        .blog-comments {
+          .comments-area {
+            h4 {
+              font-weight: 700;
+            }
+            .comments-list {
+              .commen-item {
+                display: flex;
+                &.reply {
+                  margin-left: 4rem;
+                  margin-top: 3rem;
+                }
+                .avatar {
+                  margin-right: 2rem;
+                  img {
+                    width: 5rem;
+                  }
+                }
+                .content {
+                  .title {
+                    display: flex;
+                    h5 {
+                      font-size: 16px;
+                      font-weight: 700;
+                      text-transform: capitalize;
+                      margin-bottom: 0;
+                    }
+                    span {
+                      border-left: 1px solid #e7e7e7;
+                      padding-left: 15px;
+                      margin-left: 15px;
+                    }
+                  }
+
+                  p {
+                  }
+
+                  .comments-info {
+                    a {
+                      font-size: 13px;
+                      color: $color-black;
+                      &:hover {
+                        color: $color-main;
+                      }
+                      i {
+                        margin-right: 5px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .comments-form {
+            margin-top: 4rem;
+
+            .title {
+              h4 {
+                border-bottom: 1px solid #e7e7e7;
+                font-weight: 700;
+                margin-bottom: 30px;
+                padding-bottom: 25px;
+                text-transform: capitalize;
+              }
+            }
+            .contact-comments {
+              margin-top: 2rem;
+
+              .form-group {
+               
+                .form-control {
+                  margin-bottom: 2rem;
+                }
+
+                textarea{
+                  min-height: 180px;
+    padding: 15px;
                 }
               }
             }
