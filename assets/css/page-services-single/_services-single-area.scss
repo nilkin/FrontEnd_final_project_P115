@@ -2,7 +2,6 @@
   h2 {
     font-weight: 700;
     margin-bottom: 20px;
-    
   }
 
   h4 {
@@ -11,12 +10,13 @@
   h5 {
     font-weight: 600;
   }
-.card{
+
+  .card {
     margin-bottom: 2rem;
-    i{
-        font-size: 21px;
+    i {
+      font-size: 21px;
     }
-}
+  }
   .services-content {
     .text-content {
       margin-bottom: 3rem;
@@ -35,6 +35,74 @@
         }
       }
     }
+  }
 
+  .services-sidebar {
+    .sidebar-item {
+      margin-bottom: 4rem;
+      .sidebar-title {
+        background: linear-gradient(90deg, #1e55bd 0%, #437eeb 100%);
+        color: #ffffff;
+        text-align: center;
+        padding: 16px;
+        font-weight: 800;
+        font-size: 20px;
+        position: relative;
+        margin-bottom: 2rem;
+      }
+      ul {
+        li {
+          &.active {
+            color: $color-main;
+            font-weight: 700;
+          }
+          a {
+            line-height: 3rem;
+            color: $color-black;
+            font-weight: 700;
+            &:hover {
+              color: $color-main;
+            }
+          }
+        }
+      }
+      p {
+        line-height: 28px;
+        margin: 0 0 15px;
+        text-transform: none;
+        font-weight: 400;
+      }
+
+      .contact {
+        padding: 0;
+        li {
+          display: flex;
+          margin-bottom: 1.5rem;
+          .icon {
+            i {
+              position: relative;
+              bottom: 6px;
+              color: $color-main;
+              font-size: 30px;
+              right: 1rem;
+
+              &:before {
+                font-size: 30px;
+              }
+            }
+          }
+          .info {
+            color: $color-gray;
+            display: grid;
+
+            span {
+              color: $color-gray;
+              font-weight: 700;
+              margin-bottom: 12px;
+            }
+          }
+        }
+      }
+    }
   }
 }
