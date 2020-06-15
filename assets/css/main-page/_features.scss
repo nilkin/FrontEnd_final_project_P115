@@ -1,15 +1,10 @@
 #features {
   .container-fluid {
     .features-thing {
-    //   overflow-x: hidden;
-    //   max-width: inherit;
-margin-top: 15rem;
-
       img {
-        max-width: 80%;
+        max-width: 100%;
         position: relative;
         left: 3rem;
-     
       }
 
       .features-items {
@@ -71,11 +66,10 @@ margin-top: 15rem;
         }
       }
     }
-    .wave {
-      background: $color-white;
-      position: relative;
-      bottom: 7rem;
-      z-index: -2;
-    }
+  }
+  .wave {
+    background: $color-white;
+    position: relative;
+    z-index: -9;
   }
 }

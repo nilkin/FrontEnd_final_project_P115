@@ -1,12 +1,15 @@
 #factors-area {
-    .factors-area-bg {
-   
+    .factors-area-bg {   
         img{
             max-width: 100%; 
         }
     }
     margin-top: 1rem;
     .container {
+        &.default-margin{
+            margin-bottom: 120px !important;
+            padding-bottom: 120px !important;
+        }
         .client-statics {
             .statics {
                 .timer {

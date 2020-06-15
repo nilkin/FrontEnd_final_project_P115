@@ -31,15 +31,22 @@
 
   <body>
     <header>
+      <div id="loader" class="loading">
+        <div class="load"> </div>
+        <span>Loading..............</span>
+      </div>
       <!-- navigation section -->
-      <section id="head-nav-second" class="d-flex justify-content-between responsive-class">
+      <section
+        id="head-nav-second"
+        class="d-flex justify-content-between responsive-class"
+      >
         <div class="container-fluid">
           <div class="row d-flex justify-content-between align-items-center">
             <!-- brand image -->
             <div class="col-lg-3">
               <nav class="navbar navbar-light navbar-expand-lg">
                 <a class="navbar-brand anada-brand" href="#">
-                  <img src="/assets/img/logo-light.png" />
+                  <img src="assets/img/logo-light.png" />
                 </a>
               </nav>
             </div>
@@ -192,14 +199,10 @@
             </div>
           </div>
         </div>
-  
       </section>
-      <section id="side-bar-second" >
+      <section id="side-bar-second">
         <div class="side-bar-items">
-          <!-- <span class="slide">
-            <a href="#" >
-              <i class="flaticon-list"></i></a>
-        </span> -->
+
           <div class="close-bar">
             <a href="#" class="icon">
               <i class="fas fa-times"></i>
@@ -265,7 +268,9 @@
       <section id="mobile-menu" class="mob-menu">
         <div class="container">
           <div class="mob-items d-flex justify-content-between">
-            <div class="icon"><i class="fas fa-bars"></i><i class="fas fa-times d-none"></i></div>
+            <div class="icon">
+              <i class="fas fa-bars"></i><i class="fas fa-times d-none"></i>
+            </div>
             <div class="logo-image">
               <img src="assets/img/logo.png" alt="" />
             </div>
@@ -320,7 +325,7 @@
                 <a class="nav-link" href="#"
                   >Company <i class="fas fa-angle-right"></i
                 ></a>
-                <ul class="menu-dropdown ">
+                <ul class="menu-dropdown">
                   <li>
                     <a class="dropdwn-item" href="#">About Company</a>
                   </li>
@@ -337,26 +342,18 @@
                 <a class="nav-link" href="#"
                   >Services <i class="fas fa-angle-right"></i
                 ></a>
-                <ul class="menu-dropdown ">
+                <ul class="menu-dropdown">
                   <li>
-                    <a class="dropdwn-item" href="#"
-                      >Services Version One</a
-                    >
+                    <a class="dropdwn-item" href="#">Services Version One</a>
                   </li>
                   <li>
-                    <a class="dropdwn-item" href="#"
-                      >Services Version Two</a
-                    >
+                    <a class="dropdwn-item" href="#">Services Version Two</a>
                   </li>
                   <li>
-                    <a class="dropdwn-item" href="#"
-                      >Services Version Three</a
-                    >
+                    <a class="dropdwn-item" href="#">Services Version Three</a>
                   </li>
                   <li>
-                    <a class="dropdwn-item" href="#"
-                      >Services Version Four</a
-                    >
+                    <a class="dropdwn-item" href="#">Services Version Four</a>
                   </li>
                   <li>
                     <a class="dropdwn-item" href="#">Services Single</a>
@@ -367,7 +364,7 @@
                 <a class="nav-link" href="#"
                   >Case Studies <i class="fas fa-angle-right"></i
                 ></a>
-                <ul class="menu-dropdown ">
+                <ul class="menu-dropdown">
                   <li>
                     <a class="dropdwn-item" href="#">Case Studies One</a>
                   </li>
@@ -378,9 +375,7 @@
                     <a class="dropdwn-item" href="#">Case Studies Three</a>
                   </li>
                   <li>
-                    <a class="dropdwn-item" href="#"
-                      >Case Studies Carousel</a
-                    >
+                    <a class="dropdwn-item" href="#">Case Studies Carousel</a>
                   </li>
                 </ul>
               </li>
@@ -388,7 +383,7 @@
                 <a class="nav-link" href="#"
                   >Blog <i class="fas fa-angle-right"></i
                 ></a>
-                <ul class="menu-dropdown ">
+                <ul class="menu-dropdown">
                   <li>
                     <a class="dropdwn-item" href="#">Blog Standard</a>
                   </li>
@@ -399,9 +394,7 @@
                     <a class="dropdwn-item" href="#">Blog Grid Two Colum</a>
                   </li>
                   <li>
-                    <a class="dropdwn-item" href="#"
-                      >Blog Grid Three Colum</a
-                    >
+                    <a class="dropdwn-item" href="#">Blog Grid Three Colum</a>
                   </li>
                   <li><a class="dropdwn-item" href="#">Blog Single</a></li>
                   <li>
@@ -420,11 +413,11 @@
       </section>
     </header>
 
-    <main>
+    <main id="serv-main">
       <!-- breadcrumb-area start-->
       <section id="breadcrumb-area">
         <div class="backgraund-shape">
-          <img src="/assets/img/background-shape.png" alt="" />
+          <img src="assets/img/background-shape.png" alt="" />
         </div>
         <div class="breadcrumb-content">
           <div class="container">
@@ -435,8 +428,12 @@
                   <li class="list-after">
                     <a href="#"><i class="fas fa-home"></i> Home</a>
                   </li>
-                  <li class="list-after"><a href="#">Pages</a></li>
-                  <li class="active list-before">SERVICES</li>
+                  <li class="list-after">
+                    <a href="#"><i class="far fa-circle"></i> Pages</a>
+                  </li>
+                  <li class="list-before active">
+                    <a href="#"><i class="far fa-circle"></i> About</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -580,11 +577,11 @@
         </div>
       </section>
       <!-- work-process end-->
-      <!-- tech-system start-->
+      <!-- start-usstart-->
       <section id="start-us">
         <div class="container">
-          <div class="row">
-            <div class="content-items d-flex">
+          <div class="row d-flex justify-content-between">
+            <div class="content-items">
               <div class="col-lg-7 col-md-6">
                 <div class="banner">
                   <h2>Get Ready to Start <br />Your Project With Us</h2>
@@ -603,17 +600,17 @@
                   >
                 </div>
               </div>
-              <div class="col-lg-5 col-md-6 image-size">
-                <img src="/assets/img/70.png" alt="" />
+              <div class="col-lg-5 col-md-6">
+                <img src="assets/img/70.png" alt="" />
               </div>
             </div>
           </div>
         </div>
         <div class="backgraund-shape">
-          <img src="/assets/img/background-shape.png" alt="" />
+          <img src="assets/img/background-shape.png" alt="" />
         </div>
       </section>
-      <!-- tech-system end-->
+      <!-- start-us end-->
     </main>
 
     <footer>
@@ -622,7 +619,7 @@
         <div class="container">
           <div class="foot-items">
             <div class="row">
-              <div class="static-height col-lg-4 col-md-6">
+              <div class=" col-lg-4 col-md-6">
                 <div class="foot-item anada-info">
                   <img src="assets/img/logo.png" alt="" />
                   <p>
@@ -633,7 +630,7 @@
                 </div>
               </div>
 
-              <div class="static-height col-lg-2 col-md-6">
+              <div class=" col-lg-2 col-md-6">
                 <div class="foot-item">
                   <h4 class="usefull-links">Usefull Links</h4>
                   <ul>
@@ -656,7 +653,7 @@
                 </div>
               </div>
 
-              <div class="static-height col-lg-2 col-md-6">
+              <div class=" col-lg-2 col-md-6">
                 <div class="foot-item">
                   <h4 class="services-link">Services</h4>
                   <ul>
@@ -679,7 +676,7 @@
                 </div>
               </div>
 
-              <div class="static-height col-lg-4 col-md-6">
+              <div class=" col-lg-4 col-md-6">
                 <div class="foot-item">
                   <h4 class="contact-info">Contact Info</h4>
                   <p>
@@ -734,13 +731,14 @@
             </div>
           </div>
         </div>
-      <div class="footer-shape"></div>
-    </section>
+        <div class="footer-shape"></div>
+      </section>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script></script>

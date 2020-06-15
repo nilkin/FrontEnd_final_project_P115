@@ -123,6 +123,7 @@ top: 15rem;
         .footer-bottom {
             position: relative;
             top: 7rem;
+            z-index: 4;
             p {
                 color: $color-white !important;
                 a {

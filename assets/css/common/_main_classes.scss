@@ -1,59 +1,78 @@
-.head-title{
-    h4{
-        text-transform: uppercase;
+.head-title {
+  h4 {
+    text-transform: uppercase;
     font-weight: 800;
     color: #437eeb;
     font-size: 20px;
     position: relative;
     z-index: 1;
     display: inline-block;
-    }
+  }
 
-    h2{
-        display: block;
-        font-weight: 700;
-        position: relative;
-        margin-bottom: 0;
-        font-size: 36px;
-    
-    }
+  h2 {
+    display: block;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 0;
+    font-size: 36px;
+  }
 }
 
-.default-padding{
-    padding-top: 120px;
-    padding-bottom: 110px;
+.default-padding {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+.default-margin {
+  margin-top: 60px !important;
+  margin-bottom: 60px !important;
+}
+#loader {
+  position: relative;
+  width: 100%;
+  height: 54rem;
+  .load {
+    position: relative;
+    left: 44rem;
+    top: 15rem;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 9px solid $color-main;
+    border-bottom: 9px solid$color-main;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
   }
-  
-  
-  .default-color{
-    color: $color-white;
+  span{
+    position: relative;
+    left: 41rem;
+    top: 17rem;
+    font-size: 2rem;
+    color:  $color-main;
+    font-family: cursive;
   }
+}
 
 // @mixin
 
 @mixin transition($property) {
-    -webkit-transition: $property;
-    -moz-transition: $property;
-    -ms-transition: $property;
-    -o-transition: $property;
-    transition: $property;
-  }
-  
-  @mixin box-shadow($property) {
-    box-shadow: $property;
-    -moz-box-shadow: $property;
-    -webkit-box-shadow: $property;
-    -o-box-shadow: $property;
-    -ms-box-shadow: $property;
-  }
-  @mixin transform($transform) {
-    transform: rotate($transform);
-    transform: rotate($transform);
-    transform: rotate($transform);
-    transform: rotate($transform);
-  }
-  
- .invisible{
-   visibility: hidden;
-   opacity: 0;
- }
+  -webkit-transition: $property;
+  -moz-transition: $property;
+  -ms-transition: $property;
+  -o-transition: $property;
+  transition: $property;
+}
+
+@mixin box-shadow($property) {
+  box-shadow: $property;
+  -moz-box-shadow: $property;
+  -webkit-box-shadow: $property;
+  -o-box-shadow: $property;
+  -ms-box-shadow: $property;
+}
+@mixin transform($transform) {
+  transform: rotate($transform);
+  transform: rotate($transform);
+  transform: rotate($transform);
+  transform: rotate($transform);
+}

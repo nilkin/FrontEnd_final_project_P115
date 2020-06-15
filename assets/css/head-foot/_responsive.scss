@@ -1,13 +1,11 @@
 @media (max-width: 991.98px) {
   header {
     #head-nav {
-     
       &.responsive-class {
         display: none !important;
       }
     }
     #head-nav-second {
-     
       &.responsive-class {
         display: none !important;
       }
@@ -170,9 +168,73 @@
       }
     }
   }
+  #serv-main {
+    #services-items {
+      .container {
+        .item {
+          text-align: center;
+          img {
+            position: relative;
+            left: 6rem;
+          }
+        }
+      }
+    }
 
+    #start-us {
+      .container {
+        .content-items {
+          position: relative;
+          top: 0;
+          flex-wrap: wrap;
+          .banner{
+            z-index: 1;
+        
+          }
+          .image-size {
+            img {
+              width: 100%;
+              max-width: 100%;
+            }
+          }
+          h2{
+            font-size: 24px;
+          }
+          p{
+            font-size: 13px;
+          }
+        }
+
+    }
+    .backgraund-shape {
+      img{position: relative;
+        bottom: 39rem;
+        height: 43rem;
+      }
+    }}
+  }
+
+  main {
+    overflow: hidden;
+  }
+  footer {
+    // overflow: hidden;
+    margin-top: 5rem;
+    .footer-bottom {
+      text-align: center !important;
+      ul {
+        position: relative;
+        right: 2rem;
+      }
+    }
+
+    .footer-shape-second {
+      display: none !important;
+    }
+  }
   #tech-system {
     overflow: hidden;
+
     .container {
       .content-items {
         h2 {
@@ -180,6 +242,11 @@
             font-size: 30px;
           }
           font-size: 36px;
+        }
+        .banner {
+          position: relative;
+          top: -3rem;
+          z-index: -1;
         }
       }
     }
@@ -231,6 +298,7 @@
   #about_us {
     overflow: hidden;
     width: 100%;
+    margin-top: 0;
     .container {
       .heading {
         text-align: center;
@@ -249,6 +317,12 @@
           .nav-item {
             .nav-link {
               width: 19rem;
+              &::before {
+                content: none;
+              }
+              &::after {
+                content: none;
+              }
               &.active {
                 width: 19rem;
               }
@@ -284,18 +358,20 @@
 
   #factors-area {
     overflow: hidden;
-    margin-top: 1rem;
+    margin-top: 16rem;
     .container {
       .client-statics {
         margin-top: 14rem;
         margin-bottom: -9rem;
         .statics {
+          margin-bottom: 1rem;
           .timer {
+            margin-top: 2rem;
           }
         }
 
-        .medium {
-        }
+        // .medium {
+        // }
       }
     }
   }
@@ -309,7 +385,6 @@
     }
   }
   #skill-area {
-    overflow: hidden;
     margin-top: 6rem;
     .info {
       margin-bottom: 3rem;
@@ -327,5 +402,30 @@
 
   #blog-area {
     margin-bottom: -20rem;
+  }
+
+  #breadcrumb-area {
+    .breadcrumb-content {
+      .text-item {
+        text-align: center;
+        margin-left: 2rem;
+        margin-top: 4rem;
+        h1 {
+          position: relative;
+          right: 19.5rem;
+        }
+      }
+    }
+  }
+
+  #maps-area {
+    .google-maps {
+      iframe {
+        border: 0;
+        width: 22rem;
+        height: 20rem;
+        position: relative;
+      }
+    }
   }
 }

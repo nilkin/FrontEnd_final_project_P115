@@ -45,19 +45,27 @@
                     }
                 }
             }
-            .images {
-                max-width: 100%;
-                .img-first {
-                    position: absolute;
-                  max-width: 100%;
-                }
-                .img-second {
-                    position: absolute;
-                   max-width: 100%;
-                    top: 160px;
-                    right: -70px;
+            .foto {
+                .images{
+                    img{
+                        position: absolute;
+                      
+                        &.img-first {
+                            width: 70%;
+                            position: absolute;
+                          max-width: 100%;
+                        }
+                        &.img-second {
+                            position: absolute;
+                           max-width: 100%;
+                            top: 160px;
+                            right: 2rem;
+                            width: 60%;
+                        }
+                    }
                 }
             }
         }
     }
 }
+

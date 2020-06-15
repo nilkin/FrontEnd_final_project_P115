@@ -1,4 +1,5 @@
 #blog-area {
+ 
   .container {
     .head-content {
       h2 {
@@ -16,7 +17,7 @@
     .blogs {
       margin-top: 4rem;
       .single-thing {
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
         .thing {
           box-shadow: 0 0 10px $color-shadow;
           background: $color-white;

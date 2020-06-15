@@ -31,6 +31,10 @@
 
   <body>
     <header>
+      <div id="loader" class="loading">
+        <div class="load"> </div>
+        <span>Loading..............</span>
+      </div>
       <!-- navigation section -->
       <section id="head-nav-second" class="d-flex justify-content-between responsive-class">
         <div class="container-fluid">
@@ -39,7 +43,7 @@
             <div class="col-lg-3">
               <nav class="navbar navbar-light navbar-expand-lg">
                 <a class="navbar-brand anada-brand" href="#">
-                  <img src="/assets/img/logo-light.png" />
+                  <img src="assets/img/logo-light.png" />
                 </a>
               </nav>
             </div>
@@ -196,10 +200,7 @@
       </section>
       <section id="side-bar-second" >
         <div class="side-bar-items">
-          <!-- <span class="slide">
-            <a href="#" >
-              <i class="flaticon-list"></i></a>
-        </span> -->
+
           <div class="close-bar">
             <a href="#" class="icon">
               <i class="fas fa-times"></i>
@@ -424,7 +425,7 @@
       <!-- breadcrumb-area -->
       <section id="breadcrumb-area">
         <div class="backgraund-shape">
-          <img src="/assets/img/background-shape.png" alt="" />
+          <img src="assets/img/background-shape.png" alt="" />
         </div>
         <div class="breadcrumb-content">
           <div class="container-lg container-md">
@@ -435,14 +436,19 @@
                   <li class="list-after">
                     <a href="#"><i class="fas fa-home"></i> Home</a>
                   </li>
-                  <li class="list-after"><a href="#">Pages</a></li>
-                  <li class="active list-before">SINGLE</li>
+                  <li class="list-after">
+                    <a href="#"><i class="far fa-circle"></i> Pages</a>
+                  </li>
+                  <li class="list-before active">
+                    <a href="#"><i class="far fa-circle"></i> About</a>
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- services-single-area -->
       <section id="services-single-area">
         <div class="container">
           <div class="row">
@@ -680,16 +686,15 @@
         </div>
       </section>
     </main>
-
     <footer>
       <!-- footer-area start-->
       <section id="footer-area-second" class="default-padding">
         <div class="container">
           <div class="foot-items">
             <div class="row">
-              <div class="static-height col-lg-4 col-md-6">
+              <div class=" col-lg-4 col-md-6">
                 <div class="foot-item anada-info">
-                  <img src="/assets/img/logo-light.png" alt="" />
+                  <img src="assets/img/logo-light.png" alt="" />
                   <p>
                     Required honoured trifling eat pleasure man relation.
                     Assurance yet bed was improving furniture man. Distrusts
@@ -698,7 +703,7 @@
                 </div>
               </div>
 
-              <div class="static-height col-lg-2 col-md-6">
+              <div class=" col-lg-2 col-md-6">
                 <div class="foot-item">
                   <h4 class="usefull-links">Usefull Links</h4>
                   <ul>
@@ -721,7 +726,7 @@
                 </div>
               </div>
 
-              <div class="static-height col-lg-2 col-md-6">
+              <div class=" col-lg-2 col-md-6">
                 <div class="foot-item">
                   <h4 class="services-link">Services</h4>
                   <ul>
@@ -744,7 +749,7 @@
                 </div>
               </div>
 
-              <div class="static-height col-lg-4 col-md-6">
+              <div class=" col-lg-4 col-md-6">
                 <div class="foot-item">
                   <h4 class="contact-info">Contact Info</h4>
                   <p>
@@ -808,6 +813,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script></script>

@@ -31,7 +31,12 @@
 
   <body>
     <header>
-      <!-- navigation section -->
+       <!-- loader spin -->
+      <div id="loader" class="loading">
+        <div class="load"> </div>
+        <span>Loading..............</span>
+      </div>
+      <!-- head-nav-second -->
       <section id="head-nav-second" class="d-flex justify-content-between responsive-class">
         <div class="container-fluid">
           <div class="row d-flex justify-content-between align-items-center">
@@ -46,9 +51,7 @@
             <!-- navbar content with dropdown items-->
             <div class="col-lg-9">
               <div class="container">
-                <ul
-                  class="navbar-menu nav justify-content-center navbar-expand-lg"
-                >
+                <ul class="navbar-menu nav justify-content-center navbar-expand-lg" >
                   <li class="nav-item">
                     <a class="nav-link active" href="#"
                       >Home <i class="fas fa-angle-down"></i
@@ -82,9 +85,7 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#"
-                      >Company <i class="fas fa-angle-down"></i
-                    ></a>
+                    <a class="nav-link" href="#">Company <i class="fas fa-angle-down"></i></a>
                     <ul class="menu-dropdown">
                       <li>
                         <a class="dropdwn-item" href="#">About Company</a>
@@ -192,8 +193,8 @@
             </div>
           </div>
         </div>
-
       </section>
+      <!-- side-bar-second -->
       <section id="side-bar-second" >
         <div class="side-bar-items">
           <!-- <span class="slide">
@@ -262,6 +263,7 @@
           </div>
         </div>
       </section>
+      <!-- mobile-menu -->
       <section id="mobile-menu" class="mob-menu">
         <div class="container">
           <div class="mob-items d-flex justify-content-between">
@@ -424,7 +426,7 @@
       <!-- breadcrumb-area -->
       <section id="breadcrumb-area">
         <div class="backgraund-shape">
-          <img src="/assets/img/background-shape.png" alt="" />
+          <img src="assets/img/background-shape.png" alt="" />
         </div>
         <div class="breadcrumb-content">
           <div class="container">
@@ -435,15 +437,19 @@
                   <li class="list-after">
                     <a href="#"><i class="fas fa-home"></i> Home</a>
                   </li>
-                  <li class="list-after"><a href="#">Pages</a></li>
-                  <li class="active list-before">CONTACT</li>
+                  <li class="list-after">
+                    <a href="#"><i class="far fa-circle"></i> Pages</a>
+                  </li>
+                  <li class="list-before active">
+                    <a href="#"><i class="far fa-circle"></i> About</a>
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
-
+<!-- contact-area -->
       <section id="contact-area">
           <div class="container">
             <div class="contact-items">
@@ -565,7 +571,7 @@
           </div>
        
       </section>
-
+<!-- maps-area -->
       <section id="maps-area">
         <div class="container-fluid">
           <div class="row">
@@ -582,13 +588,13 @@
 
     <footer>
       <!-- footer-area start-->
-      <section id="footer-area-second" class="default-padding">
+      <section id="footer-area-second">
         <div class="container">
           <div class="foot-items">
             <div class="row">
-              <div class="static-height col-lg-4 col-md-6">
+              <div class=" col-lg-4 col-md-6">
                 <div class="foot-item anada-info">
-                  <img src="/assets/img/logo-light.png" alt="" />
+                  <img src="assets/img/logo-light.png" alt="" />
                   <p>
                     Required honoured trifling eat pleasure man relation.
                     Assurance yet bed was improving furniture man. Distrusts
@@ -597,7 +603,7 @@
                 </div>
               </div>
 
-              <div class="static-height col-lg-2 col-md-6">
+              <div class=" col-lg-2 col-md-6">
                 <div class="foot-item">
                   <h4 class="usefull-links">Usefull Links</h4>
                   <ul>
@@ -620,7 +626,7 @@
                 </div>
               </div>
 
-              <div class="static-height col-lg-2 col-md-6">
+              <div class=" col-lg-2 col-md-6">
                 <div class="foot-item">
                   <h4 class="services-link">Services</h4>
                   <ul>
@@ -643,7 +649,7 @@
                 </div>
               </div>
 
-              <div class="static-height col-lg-4 col-md-6">
+              <div class=" col-lg-4 col-md-6">
                 <div class="foot-item">
                   <h4 class="contact-info">Contact Info</h4>
                   <p>
@@ -707,6 +713,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script></script>

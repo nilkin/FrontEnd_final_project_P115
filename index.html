@@ -24,14 +24,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"
     />
-    <link rel="stylesheet" href="/assets/font/flaticon.css" />
-    <link rel="stylesheet" href="/assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/font/flaticon.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
+
+
     <header>
-      <!-- navigation section -->
+  <!-- loader spin -->
+      <div id="loader" class="loading">
+        <div class="load"> </div>
+        <span>Loading..............</span>
+      </div>
+   <!-- head-nav-->
       <section id="head-nav" class="responsive-class">
         <div class="container-fluid">
           <div class="row d-flex justify-content-between align-items-center">
@@ -39,7 +46,7 @@
             <div class="col-lg-3">
               <nav class="navbar navbar-light navbar-expand-lg">
                 <a class="navbar-brand anada-brand" href="#">
-                  <img src="/assets/img/logo-light.png" />
+                  <img src="assets/img/logo-light.png" />
                 </a>
               </nav>
             </div>
@@ -193,7 +200,7 @@
           </div>
         </div>
       </section>
-        <!-- side-bar -->
+      <!-- side-bar -->
       <section id="side-bar">
         <div class="side-bar-items">
           <!-- <span class="slide">
@@ -266,7 +273,9 @@
       <section id="mobile-menu" class="mob-menu">
         <div class="container">
           <div class="mob-items d-flex justify-content-between">
-            <div class="icon"><i class="fas fa-bars"></i><i class="fas fa-times d-none"></i></div>
+            <div class="icon">
+              <i class="fas fa-bars"></i><i class="fas fa-times d-none"></i>
+            </div>
             <div class="logo-image">
               <img src="assets/img/logo.png" alt="" />
             </div>
@@ -282,14 +291,14 @@
             </div>
           </div>
         </div>
-        <div id="navbar-left-menu" >
+        <div id="navbar-left-menu">
           <div class="container">
             <ul class="navbar-menu flex-column">
               <li class="nav-item">
                 <a class="nav-link" href="#"
                   >Home <i class="fas fa-angle-right"></i
                 ></a>
-                <ul class="menu-dropdown ">
+                <ul class="menu-dropdown">
                   <li>
                     <a class="dropdwn-item" href="#">Home Version One</a>
                   </li>
@@ -321,7 +330,7 @@
                 <a class="nav-link" href="#"
                   >Company <i class="fas fa-angle-right"></i
                 ></a>
-                <ul class="menu-dropdown ">
+                <ul class="menu-dropdown">
                   <li>
                     <a class="dropdwn-item" href="#">About Company</a>
                   </li>
@@ -338,26 +347,18 @@
                 <a class="nav-link" href="#"
                   >Services <i class="fas fa-angle-right"></i
                 ></a>
-                <ul class="menu-dropdown ">
+                <ul class="menu-dropdown">
                   <li>
-                    <a class="dropdwn-item" href="#"
-                      >Services Version One</a
-                    >
+                    <a class="dropdwn-item" href="#">Services Version One</a>
                   </li>
                   <li>
-                    <a class="dropdwn-item" href="#"
-                      >Services Version Two</a
-                    >
+                    <a class="dropdwn-item" href="#">Services Version Two</a>
                   </li>
                   <li>
-                    <a class="dropdwn-item" href="#"
-                      >Services Version Three</a
-                    >
+                    <a class="dropdwn-item" href="#">Services Version Three</a>
                   </li>
                   <li>
-                    <a class="dropdwn-item" href="#"
-                      >Services Version Four</a
-                    >
+                    <a class="dropdwn-item" href="#">Services Version Four</a>
                   </li>
                   <li>
                     <a class="dropdwn-item" href="#">Services Single</a>
@@ -368,7 +369,7 @@
                 <a class="nav-link" href="#"
                   >Case Studies <i class="fas fa-angle-right"></i
                 ></a>
-                <ul class="menu-dropdown ">
+                <ul class="menu-dropdown">
                   <li>
                     <a class="dropdwn-item" href="#">Case Studies One</a>
                   </li>
@@ -379,9 +380,7 @@
                     <a class="dropdwn-item" href="#">Case Studies Three</a>
                   </li>
                   <li>
-                    <a class="dropdwn-item" href="#"
-                      >Case Studies Carousel</a
-                    >
+                    <a class="dropdwn-item" href="#">Case Studies Carousel</a>
                   </li>
                 </ul>
               </li>
@@ -389,7 +388,7 @@
                 <a class="nav-link" href="#"
                   >Blog <i class="fas fa-angle-right"></i
                 ></a>
-                <ul class="menu-dropdown ">
+                <ul class="menu-dropdown">
                   <li>
                     <a class="dropdwn-item" href="#">Blog Standard</a>
                   </li>
@@ -400,9 +399,7 @@
                     <a class="dropdwn-item" href="#">Blog Grid Two Colum</a>
                   </li>
                   <li>
-                    <a class="dropdwn-item" href="#"
-                      >Blog Grid Three Colum</a
-                    >
+                    <a class="dropdwn-item" href="#">Blog Grid Three Colum</a>
                   </li>
                   <li><a class="dropdwn-item" href="#">Blog Single</a></li>
                   <li>
@@ -420,32 +417,38 @@
         </div>
       </section>
     </header>
-    
+
     <main>
       <!-- tech-system start-->
       <section id="tech-system">
-        <div class="container">
-          <div class="row ">
+        <div class="container default-margin">
+          <div class="row">
             <div class="content-items">
               <div class="col-lg-6 col-md-12">
                 <div class="banner">
-                  <h2 class="wow fadeInDown" data-wow-duration="1s"> 
+                  <h2 class="wow fadeInDown" data-wow-duration="1s">
                     <span>Applying Data Science</span>
                     And Techniques with Systems
                   </h2>
-                  <p class="wow fadeInLeft" data-wow-duration="1.5s" >
+                  <p class="wow fadeInLeft" data-wow-duration="1.5s">
                     Contented continued any happiness instantly objection yet
                     her allowance. Use correct day new brought tedious. Kept
                     easy or sons my it done.
                   </p>
 
-                  <a class="my-btn-primary btn-grad wow fadeInUp " data-wow-duration="1.8s" href="#"
+                  <a
+                    class="my-btn-primary btn-grad wow fadeInUp"
+                    data-wow-duration="1.8s"
+                    href="#"
                     >Get Started <i class="fas fa-plus circle-plus"></i
                   ></a>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-12 wow fadeInRight" data-wow-duration="1s">
-                <img src="/assets/img/1.png" alt="" class="img-fluid" />
+              <div
+                class="col-lg-6 col-md-12 wow fadeInRight"
+                data-wow-duration="1s"
+              >
+                <img src="assets/img/1.png" alt="" class="img-fluid" />
               </div>
             </div>
           </div>
@@ -455,85 +458,85 @@
       <!-- features start-->
       <section id="features">
         <div class="container-fluid">
-<div class="features-thing">
-  <div class="row">
-    <div class="col-lg-5 col-md-6 ">
-      <!-- add image  -->
-      <div class="wow fadeInRight">
-        <img src="assets/img/2.png" alt=""/>
-      </div>
-    </div>
-    <!-- slider -->
-    <div class="col-lg-7 col-md-6">
-      <div
-        class="features-items owl-carousel owl-theme container-fluid"
-      >
-        <!--adding owl carusel  -->
-        <div class="item" style="width: 450px;">
-          <div class="items-box">
-            <div class="icon">
-              <i class="flaticon-data"></i>
-            </div>
-            <h3>Analysis competitors</h3>
-            <p>
-              Especially of dissimilar up attachment themselves by
-              interested boisterous. Linen mrs seems men table. Jennings
-              dashwood to quitting marriage bachelor in. On as
-              conviction in of appearance apartments boisterous.
-            </p>
-            <div class="down-border">
-              <a class="btn-overlay" href="#"
-                ><i class="fas fa-angle-right"></i> Get Started</a
-              >
+          <div class="features-thing">
+            <div class="row">
+              <div class="col-lg-5 col-md-6">
+                <!-- add image  -->
+                <div class="wow fadeInRight">
+                  <img src="assets/img/2.png" alt="" />
+                </div>
+              </div>
+              <!-- slider -->
+              <div class="col-lg-7 col-md-6">
+                <div
+                  class="features-items owl-carousel owl-theme container-fluid"
+                >
+                  <!--adding owl carusel  -->
+                  <div class="item" style="width: 450px;">
+                    <div class="items-box">
+                      <div class="icon">
+                        <i class="flaticon-data"></i>
+                      </div>
+                      <h3>Analysis competitors</h3>
+                      <p>
+                        Especially of dissimilar up attachment themselves by
+                        interested boisterous. Linen mrs seems men table.
+                        Jennings dashwood to quitting marriage bachelor in. On
+                        as conviction in of appearance apartments boisterous.
+                      </p>
+                      <div class="down-border">
+                        <a class="btn-overlay" href="#"
+                          ><i class="fas fa-angle-right"></i> Get Started</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item" style="width: 450px;">
+                    <div class="items-box">
+                      <div class="icon">
+                        <i class="flaticon-target"></i>
+                      </div>
+                      <h3>Target your audience</h3>
+                      <p>
+                        Especially of dissimilar up attachment themselves by
+                        interested boisterous. Linen mrs seems men table.
+                        Jennings dashwood to quitting marriage bachelor in. On
+                        as conviction in of appearance apartments boisterous.
+                      </p>
+                      <div class="down-border">
+                        <a class="btn-overlay" href="#"
+                          ><i class="fas fa-angle-right"></i> Get Started</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item" style="width: 450px;">
+                    <div class="items-box">
+                      <div class="icon">
+                        <i class="flaticon-competition"></i>
+                      </div>
+                      <h3>Analysis big Data</h3>
+                      <p>
+                        Especially of dissimilar up attachment themselves by
+                        interested boisterous. Linen mrs seems men table.
+                        Jennings dashwood to quitting marriage bachelor in. On
+                        as conviction in of appearance apartments boisterous.
+                      </p>
+                      <div class="down-border">
+                        <a class="btn-overlay" href="#"
+                          ><i class="fas fa-angle-right"></i> Get Started</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="item" style="width: 450px;">
-          <div class="items-box">
-            <div class="icon">
-              <i class="flaticon-target"></i>
-            </div>
-            <h3>Target your audience</h3>
-            <p>
-              Especially of dissimilar up attachment themselves by
-              interested boisterous. Linen mrs seems men table. Jennings
-              dashwood to quitting marriage bachelor in. On as
-              conviction in of appearance apartments boisterous.
-            </p>
-            <div class="down-border">
-              <a class="btn-overlay" href="#"
-                ><i class="fas fa-angle-right"></i> Get Started</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="item" style="width: 450px;">
-          <div class="items-box">
-            <div class="icon">
-              <i class="flaticon-competition"></i>
-            </div>
-            <h3>Analysis big Data</h3>
-            <p>
-              Especially of dissimilar up attachment themselves by
-              interested boisterous. Linen mrs seems men table. Jennings
-              dashwood to quitting marriage bachelor in. On as
-              conviction in of appearance apartments boisterous.
-            </p>
-            <div class="down-border">
-              <a class="btn-overlay" href="#"
-                ><i class="fas fa-angle-right"></i> Get Started</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
         </div>
         <!-- add svg file shape to bottom  -->
         <div class="wave">
-          <img src="/assets/img/6.svg" alt="" />
+          <img src="assets/img/6.svg" alt="" />
         </div>
       </section>
       <!-- features end-->
@@ -619,12 +622,8 @@
                         ><i class="fas fa-angle-right"></i> Read More</a
                       >
                     </div>
-                    <div class="col-lg-5 col-md-12 ">
-                      <img
-                        src="/assets/img/7.png"
-                        class="img-fluid"
-                        alt=""
-                      />
+                    <div class="col-lg-5 col-md-12">
+                      <img src="assets/img/7.png" class="img-fluid" alt="" />
                     </div>
                   </div>
                 </div>
@@ -645,12 +644,8 @@
                         ><i class="fas fa-angle-right"></i> Read More</a
                       >
                     </div>
-                    <div class="col-lg-5 col-md-12 ">
-                      <img
-                        src="/assets/img/7.png"
-                        class="img-fluid"
-                        alt=""
-                      />
+                    <div class="col-lg-5 col-md-12">
+                      <img src="assets/img/7.png" class="img-fluid" alt="" />
                     </div>
                   </div>
                 </div>
@@ -671,12 +666,8 @@
                         ><i class="fas fa-angle-right"></i> Read More</a
                       >
                     </div>
-                    <div class="col-lg-5 col-md-12 ">
-                      <img
-                        src="/assets/img/7.png"
-                        class="img-fluid"
-                        alt=""
-                      />
+                    <div class="col-lg-5 col-md-12">
+                      <img src="assets/img/7.png" class="img-fluid" alt="" />
                     </div>
                   </div>
                 </div>
@@ -688,14 +679,12 @@
       <!-- about_us end -->
       <!-- factors-area start-->
       <section id="factors-area">
-        <div
-          class="factors-area-bg justify-content-center align-items-center text-center"
+        <div class="factors-area-bg justify-content-center align-items-center text-center"
         >
-          <margin-left: 0px;
-          position: absolute;
-          left: 5rem; src="/assets/img/map.svg" alt="" />
+          <img src="assets/img/map.svg" alt="" />
         </div>
-        <div class="container">
+
+        <div class="container default-margin default-padding timer-section">
           <div class="client-statics">
             <div class="row">
               <div class="col-lg-3 col-md-6">
@@ -731,7 +720,7 @@
       <section id="services-area">
         <!-- rotation shape -->
         <div class="shape-anime">
-          <img src="/assets/img/round-shappe.png" class="img-fluid" alt="" />
+          <img src="assets/img/round-shappe.png" class="img-fluid" alt="" />
         </div>
         <div class="container">
           <div class="service-item">
@@ -883,10 +872,10 @@
       <!-- work-process end-->
       <!-- skill-area start-->
       <section id="skill-area">
-        <div class="container">
+        <div class="container default-padding">
           <div class="skills">
-            <div class="row">
-              <div class="col-lg-6 info">
+            <div class="row d-flex">
+              <div class="col-lg-6 col-md-6 info">
                 <h2>Our Skill</h2>
                 <h3>
                   We are master in data science <br />
@@ -941,16 +930,16 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-6 col-md-6 foto">
                 <div class="images">
                   <img
-                    class="wow fadeInRight img-fluid img-first"
+                    class="wow fadeInRight img-first"
                     data-wow-delay="0.6s"
                     src="assets/img/3.jpg"
                     alt=""
                   />
                   <img
-                    class="wow fadeInLeft img-fluid img-second"
+                    class="wow fadeInLeft img-second"
                     data-wow-delay="0.8s"
                     src="assets/img/1.jpg"
                     alt=""
@@ -964,7 +953,7 @@
       <!-- testimonials-areastart-->
       <section id="testimonials-area">
         <div class="testimonia">
-          <div class="container">
+          <div class="container default-padding default-margin">
             <div class="row">
               <div class="col-lg-8 col-md-2">
                 <div class="heading text-center">
@@ -1047,7 +1036,7 @@
       <!-- testimonials-area end-->
       <!-- blog-area start-->
       <section id="blog-area">
-        <div class="container default-margin">
+        <div class="container">
           <div class="head-content">
             <div class="row justify-content-between">
               <div class="col-lg-5 col-md-6 item">
@@ -1191,7 +1180,7 @@
         <div class="container">
           <div class="foot-items">
             <div class="row">
-              <div class="static-height col-lg-4 col-md-6">
+              <div class=" col-lg-4 col-md-6">
                 <div class="foot-item anada-info">
                   <img src="assets/img/logo.png" alt="" />
                   <p>
@@ -1202,7 +1191,7 @@
                 </div>
               </div>
 
-              <div class="static-height col-lg-2 col-md-6">
+              <div class=" col-lg-2 col-md-6">
                 <div class="foot-item">
                   <h4 class="usefull-links">Usefull Links</h4>
                   <ul>
@@ -1225,7 +1214,7 @@
                 </div>
               </div>
 
-              <div class="static-height col-lg-2 col-md-6">
+              <div class=" col-lg-2 col-md-6">
                 <div class="foot-item">
                   <h4 class="services-link">Services</h4>
                   <ul>
@@ -1248,7 +1237,7 @@
                 </div>
               </div>
 
-              <div class="static-height col-lg-4 col-md-6">
+              <div class=" col-lg-4 col-md-6">
                 <div class="foot-item">
                   <h4 class="contact-info">Contact Info</h4>
                   <p>
@@ -1304,16 +1293,16 @@
           </div>
         </div>
       </section>
-
+   <!-- footer-shape-->
       <div class="footer-shape"></div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
-
     <script src="assets/js/main.js"></script>
   </body>
 </html>
