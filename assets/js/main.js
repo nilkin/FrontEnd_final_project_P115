@@ -64,7 +64,7 @@ $(document).ready(function () {
         stagePadding: 50,
         loop: true,
         merge: true,
-        items: 1,
+        items: 2,
         autoWidth: true,
         margin: 40,
         autoplay: true,
@@ -89,6 +89,10 @@ $(document).ready(function () {
     })
 
     $('.timer').countTo();
+ 
+  
+        
+
 
     function wowAnimation() {
         let wow = new WOW({
@@ -112,7 +116,7 @@ $(document).ready(function () {
 
     $("#head-nav .navbar-menu .attr-nav a i.flaticon-list").click(function (e) {
         e.preventDefault();
-        console.log($("#side-bar"))
+
         $("#side-bar").animate({ right: '-20px', opacity: '1' }, 100);
         $("#side-bar .side-bar-items .close-bar .icon i").removeClass("fa-long-arrow-alt-right").addClass("fa-times");
 
@@ -120,56 +124,66 @@ $(document).ready(function () {
     });
     $("#side-bar .side-bar-items .close-bar .icon i").click(function (e) {
         e.preventDefault();
-        console.log($("#side-bar"));
+  
         $("#side-bar .side-bar-items .close-bar .icon i").removeClass("fa-times").addClass("fa-long-arrow-alt-right");
 
         $("#side-bar").animate({ right: '-380px', opacity: '0' }, 100);
 
 
     });
-    $("#head-nav-second .attribut .attr-nav a i.flaticon-list").click(function (e) {
+    $("#head-nav-second .attr-nav a i.flaticon-list").click(function (e) {
         e.preventDefault();
-        console.log($("#side-bar"))
+        
         $("#side-bar-second").animate({ right: '-20px', opacity: '1' }, 100);
         $("#side-bar-second .side-bar-items .close-bar .icon i").removeClass("fa-long-arrow-alt-right").addClass("fa-times");
 
 
     });
-    $("#mobile-menu .mob-items .attribute .attr-nav a i.flaticon-list").click(function (e) {
-        e.preventDefault();
-        console.log($("#side-bar"))
-        $("#side-bar").animate({ right: '57.7rem', opacity: '1' }, 100);
+    $("#head-nav-second .attr-nav a i.flaticon-list").click(function (e) {
+      
+        
+        $("#side-bar").animate({ right: '-20px', opacity: '1' }, 100);
         $("#side-bar .side-bar-items .close-bar .icon i").removeClass("fa-long-arrow-alt-right").addClass("fa-times");
 
-    });
-
-    $("#mobile-menu .mob-items .attribute .attr-nav a i.flaticon-list").click(function (e) {
-        e.preventDefault();
-        console.log($("#side-bar"))
-        $("#side-bar-second").animate({ right: '-20px', opacity: '1' }, 100);
-        $("#side-bar-second .side-bar-items .close-bar .icon i").removeClass("fa-long-arrow-alt-right").addClass("fa-times");
 
     });
+
 
     $("#side-bar-second .side-bar-items .close-bar .icon i").click(function (e) {
         e.preventDefault();
-        console.log($("#side-bar"));
+        
         $("#side-bar-second .side-bar-items .close-bar .icon i").removeClass("fa-times").addClass("fa-long-arrow-alt-right");
         $("#side-bar-second").animate({ right: '-380px', opacity: '0' }, 100);
 
 
     });
 
+    $("#mobile-menu .mob-items .attribute .attr-nav a i.flaticon-list").click(function (e) {
+        e.preventDefault();
+       
+        $("#side-bar").animate({ right: '-20px', opacity: '1' }, 100);
+        $("#side-bar .side-bar-items .close-bar .icon i").removeClass("fa-long-arrow-alt-right").addClass("fa-times");
+
+    });
+
+    $("#mobile-menu .mob-items .attribute .attr-nav a i.flaticon-list").click(function (e) {
+        e.preventDefault();
+       
+        $("#side-bar-second").animate({ right: '-20px', opacity: '1' }, 100);
+        $("#side-bar-second .side-bar-items .close-bar .icon i").removeClass("fa-long-arrow-alt-right").addClass("fa-times");
+
+    });
+
     $("#mobile-menu.mob-menu .mob-items .icon i.fa-bars").click(function (e) {
         e.preventDefault();
-        $("#mobile-menu #navbar-left-menu").slideToggle(100).removeClass("d-none");
-        $(this).toggleClass("fa-times");
+        $("#mobile-menu #navbar-left-menu").slideToggle(600);
+        $(this).toggleClass("fa-times",600);
     });
     $("#mobile-menu #navbar-left-menu .navbar-menu .nav-item .nav-link").click(function (e) {
         e.preventDefault();
-        $(this).next().slideToggle("slow").removeClass("d-none");
-        console.log($(this).next());
-
+        $(this).next().slideToggle("slow");
+     
     });
+
 });
 

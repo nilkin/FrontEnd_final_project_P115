@@ -46,14 +46,14 @@
                 }
             }
             .images {
-                position: relative;
+                max-width: 100%;
                 .img-first {
                     position: absolute;
-                    width: 80%;
+                  max-width: 100%;
                 }
                 .img-second {
                     position: absolute;
-                    width: 60%;
+                   max-width: 100%;
                     top: 160px;
                     right: -70px;
                 }

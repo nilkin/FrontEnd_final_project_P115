@@ -1,6 +1,8 @@
 #tech-system {
     .container {
         .content-items {
+            display: flex;
+            flex-wrap: inherit;
             .banner {
                 position: relative;
                 top: 1rem;
